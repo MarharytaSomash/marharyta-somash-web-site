@@ -1,3 +1,15 @@
 .main_menu{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
    background-color: black;
+   max-width: 30%;
+   padding: 25px;
+   .logo{
+      color:red
+   }
+   p{
+      color:aliceblue;
+   }
 }
