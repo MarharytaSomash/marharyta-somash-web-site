@@ -1,0 +1,25 @@
+.main_menu_nav{
+   width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #686767;
+
+      &.Link{
+      
+      text-align: center;
+      width: 100%;
+      display: block;
+      font-size: 1.6rem;
+      color: #909096;
+      line-height: 5rem;
+      border-bottom: 1px solid #282828;
+      &.active,
+      &:hover{
+         color: #08fdd8;
+      }
+
+      } 
+       
+}

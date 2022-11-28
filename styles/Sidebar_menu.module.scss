@@ -4,12 +4,25 @@
    justify-content: center;
    align-items: center;
    background-color: black;
+   box-sizing: border-box; 
+   font-size: 14px;
+   cursor: pointer;
    max-width: 30%;
    padding: 25px;
-   .logo{
-      color:red
-   }
-   p{
-      color:aliceblue;
-   }
-}
+   
+   .logo {
+     
+            span{
+                  font-family: font-file-82132;
+                  color: #fff;
+                  margin-top: 1px;
+                  font-size: 2.7rem;
+            }
+         }
+            p{
+                  font-family: 'Open Sans';
+                  color: #a5a5a5;
+                  font-size: 1.2rem;
+                  margin-top: 1rem;
+            }
+      }
