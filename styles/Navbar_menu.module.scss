@@ -4,13 +4,14 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 5px;
       border: 1px solid #686767;
 
       &.Link{
       
+      display: block;
       text-align: center;
       width: 100%;
-      display: block;
       font-size: 1.6rem;
       color: #909096;
       line-height: 5rem;
