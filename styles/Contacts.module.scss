@@ -1,5 +1,9 @@
 .contacts {
    display: flex;
-   flex-direction: row;
-   padding: 5px;
+   flex-wrap: wrap;
+   color: #909096;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   height: 20rem;
 }

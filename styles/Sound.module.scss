@@ -1,0 +1,45 @@
+.sound svg {
+   height: 20px;
+   margin-right: 5px;
+   will-change: transform;
+ 
+   path {
+      fill: #FD1056;
+   }
+}
+.sound a:before {
+     content: 'OFF';
+     cursor: pointer;
+     color: #FD1056;
+     transition: none;
+     margin-left: 5px;
+     
+}
+@media screen and (max-width: 600px) {
+   .sound {
+      font-size: 15px;
+   }
+}
+
+@media screen and (max-width: 1300px) {
+   .sound {
+   top: 1rem;
+   right: auto;
+   left: 10px;
+   font-size: 15px;
+   }
+}
+.sound {
+   border-radius: 3px;
+   padding: 5px;
+   right: 20px;
+   position: fixed;
+   z-index: 999999;
+   top: 20px;
+   display: flex;
+   align-items: center;
+   color: #fff;
+   font-size: 16px;
+   pointer-events: none;
+   
+}

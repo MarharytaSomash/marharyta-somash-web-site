@@ -9,7 +9,7 @@ const Contacts = () => {
          
             <Link href={el.link} className={styles.contacts}>
                <a target={'_blank'}>
-                  {el.icon}
+                  {el.icon} 
                </a>
             </Link>
          })}

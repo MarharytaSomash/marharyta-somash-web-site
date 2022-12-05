@@ -77,3 +77,22 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
+
+
+@media screen and (max-width: 1300px) {
+  body {
+  padding-left: 0;
+  }
+} 
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background: #1d1d1d;
+  display: block;
+  min-width: 320px;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  padding-left: 13rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
