@@ -1,0 +1,27 @@
+.skills{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // overflow: scroll;
+      
+   .about_skills{
+      width: 50%;
+      font-family: "Open Sans", sans-serif;
+      
+      .skills_title{
+         color: aquamarine;
+         font-weight: 800;
+         font-size: 60px;
+         margin: 20px;
+         padding: 20px;
+   }
+   .skills_describe{
+      color: azure;
+         width: 50%;
+         font-size: 24px;
+         line-height: 30px;
+
+   }
+   }
+
+}

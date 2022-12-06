@@ -1,15 +1,16 @@
 import Navbar from "./Navbar_menu";
 import Sound from "./Sound";
 
-const Layout = ({children}) => (
+const Layout = ({children}) => {
 
-   
-   <>
-    <Sound/>
-    <Navbar />
-    {children}
-   
-  </>
+   return (
+      <div>
+          <Sound/>
+          <Navbar/>
+          {children}
+     </div>
+   )
+  
+   }
 
-)
 export default Layout;
