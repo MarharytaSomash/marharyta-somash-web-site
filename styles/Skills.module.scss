@@ -1,27 +1,69 @@
 .skills{
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: center;
-      // overflow: scroll;
+      overflow: scroll;
       
    .about_skills{
-      width: 50%;
+      width: 60%;
       font-family: "Open Sans", sans-serif;
-      
+      padding: 10px;
+
       .skills_title{
          color: aquamarine;
          font-weight: 800;
          font-size: 60px;
          margin: 20px;
          padding: 20px;
-   }
-   .skills_describe{
-      color: azure;
-         width: 50%;
-         font-size: 24px;
-         line-height: 30px;
+       }
+      .skills_describe{
+            color: azure;
+            width: 80%;
+            font-size: 24px;
+            line-height: 30px;
+           div{
+            margin-bottom: 25px;
+            a{
+               color: aquamarine;
+            }
+           } 
 
+      }
    }
-   }
+   
+.skills_experience{
+   width: 60%;
+   font-family: "Open Sans", sans-serif;
+   padding: 10px;
 
+    .skills_list{
+      font-weight: 600;
+      font-size: 25px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      line-height: 40px;
+    }
+    .experience {
+      background-color: rgba(169, 165, 165, 0.093);
+      width: 80%;
+      margin-bottom: 40px;
+      padding: 25px;
+
+      h2{
+         color: whitesmoke;
+         font-size: 30px;
+         font-weight: 600;
+         margin-bottom: 10px;
+      }
+      h3,h4,p{
+         color: darkgrey;
+         font-size: 20px;
+      }
+      h4{
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+}
 }

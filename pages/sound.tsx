@@ -1,5 +1,5 @@
 import Sound from '../components/Sound';
-// import styles from '../styles/About.module.scss'
+import styles from '../styles/Sound.module.scss'
 
 const sound = () => {
    return (
