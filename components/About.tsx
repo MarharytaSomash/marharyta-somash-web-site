@@ -1,4 +1,5 @@
-import styles from '../styles/About.module.scss'
+import styles from '../styles/About.module.scss';
+import Link from 'next/link';
 
 const About = () => {
    return (
@@ -6,11 +7,24 @@ const About = () => {
                <h1 className={styles.about_title}>About myself</h1>
                <p className={styles.about_details}>
                   I’m a Front-End Developer located in Kyiv.
+               </p>
+               <p className={styles.about_details}>
                   I describe myself as a person people with strategic thinking, purposeful, who always develops.
-                  I am open to opportunity.
-                  I have do not have commercial experience in creating websites,
+                </p>
+                
+               <p className={styles.about_details}>
+                  I do not have commercial experience in creating websites,
                   and  I successfully graduated  several IT Courses and continue to improve my English.
                </p>
+               
+              <p className={styles.about_details_link}>
+               <Link href={'#'}>
+                 Let’s make something special
+               </Link>
+               </p>
+         
+                  
+               
         </div>
       
    )

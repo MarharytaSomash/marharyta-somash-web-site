@@ -12,7 +12,7 @@ const Skills = () => {
                      This  experience  has made to improve my planning skills and organisation.</div>
                      <div>Also i worked as an economist for 2 years made various sales reports and product price analyses.
                      This experience helpS me become persistent and have strategic thinking with excellent knowledge Microsoft Office and 1C Entrepreneur.</div>
-                     <div> Visit my profile <Link href={'https://www.linkedin.com/in/marharyta-somash-aa7010197/'}> <a target={'_blank'}>LinkedIn</a>  </Link>profile for more details or just contact me. </div>
+                     <div> Visit my profile <Link href={'https://www.linkedin.com/in/marharyta-somash-aa7010197/'}> <a target={'_blank'}></a> LinkedIn </Link>profile for more details or just contact me. </div>
             </div>
        </div>
                <div className={styles.skills_experience}> 

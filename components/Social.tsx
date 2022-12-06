@@ -1,21 +1,19 @@
-import { contacts_data } from '../components/constants/default_data';
+import { social_data } from './constants/default_data';
 import Link from 'next/link';
 import styles from '../styles/Contacts.module.scss'
 
-const Contacts = () => {
+const Social= () => {
    return (
       <>
-         {contacts_data.map((el) => {
+         {social_data.map((el) => {
          
-            <Link href={el.link} className={styles.contacts}>
+            <Link href={el.link} className={styles.social}>
                <a target={'_blank'}>
                   {/* {el.icon}  */}
                </a>
             </Link>
          })}
       </>
-          )
-    
-         
+          )         
 }
-export default Contacts;
+export default Social;

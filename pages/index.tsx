@@ -1,5 +1,5 @@
 import About from '../components/About';
-import Contacts from '../components/Contacts';
+import Contacts from '../components/Social';
 import Navbar from '../components/Navbar_menu';
 import styles from '../styles/Home.module.scss';
 

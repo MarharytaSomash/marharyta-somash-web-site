@@ -9,6 +9,7 @@
     overflow: scroll;
 
 
+
    .about_title {
       color: aquamarine;
       font-weight: 800;
@@ -20,8 +21,14 @@
       .about_details {
         color: azure;
         width: 50%;
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 40px;
+        line-height: 55px;
+        margin-bottom: 25px;
+        align-self:flex-start;
+      }
+      .about_details_link{
+       color: aquamarine;
+       font-size: 30px;
       }
 
 }

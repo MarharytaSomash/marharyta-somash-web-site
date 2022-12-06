@@ -1,11 +1,11 @@
 export const navigation = [
   { id: 1, title: 'About me', path: '/about' },
-  { id: 2, title: 'Skills && Experience', path: '/skills' },
+  { id: 2, title: 'Skills & Experience', path: '/skills' },
   { id: 3, title: 'Education', path: '/education' },
   { id: 4, title: 'Contact', path: '/contact' },
   { id: 5, title: 'Blog', path: '/blog' },
 ];
-export  const contacts_data = [
+export  const social_data = [
   {
     link: 'https://github.com/MarharytaSomash',
     className: 'git',
