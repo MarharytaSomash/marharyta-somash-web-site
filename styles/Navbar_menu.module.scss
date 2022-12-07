@@ -37,6 +37,7 @@
    z-index: 3;
    margin: 0;
    padding: 0;
+   cursor: pointer;
 }
 @media screen and (max-width: 1300px){
    .main-menu {
@@ -106,8 +107,9 @@ padding: 2rem 0;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   border-top: 1px solid #282828;
-   background: #0000001b;
+   // border-top: 1px solid #282828;
+   // background: #0000001b;
+  
   
       &.Link{
       
@@ -117,7 +119,7 @@ padding: 2rem 0;
       font-size: 1.6rem;
       color: #909096;
       line-height: 5rem;
-      border-bottom: 1px solid #282828;
+      border-bottom: 1px solid #f2f2f2;
          
          &.active,
          &:hover {

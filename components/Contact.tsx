@@ -1,5 +1,6 @@
 import styles from '../styles/Contact.module.scss';
-import Link from 'next/link';
+import Form from './Form';
+
 
 const Contact = () => {
    return (
@@ -9,13 +10,13 @@ const Contact = () => {
                <p > I am open to opportunity. </p>  
                <p> If you have  question, don't hesitate to use the form.</p> 
                
-        </div>
-       <form>
-            <label>Name</label>
-            {/* <input type="text" > jb</input> */}
-         </form>
-      </>
+         </div>
+         <Form/>
+         </>
    )
-}
+   }
 
 export default Contact;
+      
+
+      

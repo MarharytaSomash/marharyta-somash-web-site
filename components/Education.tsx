@@ -34,7 +34,7 @@ const Education = () => {
                   </Link>
             </p>
             <h3 className={styles.education_title}>
-               2022, Green Forest English course - Upper-intermediate level.
+               2022 -to present, Green Forest English course - Upper-intermediate level.
             </h3> 
             <p className={styles.education_details_link}>
                   <Link href={'#'}>

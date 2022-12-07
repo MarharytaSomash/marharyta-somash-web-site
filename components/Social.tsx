@@ -1,6 +1,6 @@
 import { social_data } from './constants/default_data';
 import Link from 'next/link';
-import styles from '../styles/Contacts.module.scss'
+import styles from '../styles/Social.module.scss'
 
 const Social= () => {
    return (
@@ -9,7 +9,7 @@ const Social= () => {
          
             <Link href={el.link} className={styles.social}>
                <a target={'_blank'}>
-                  {/* {el.icon}  */}
+                  {el.icon} 
                </a>
             </Link>
          })}

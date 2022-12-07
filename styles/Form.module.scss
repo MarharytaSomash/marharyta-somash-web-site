@@ -1,0 +1,42 @@
+.form{
+width: 50%;
+color: white;
+margin-top: 50px;
+   input[id=name],input[id=email]{
+      color: darkgray;
+      background-color: rgba(77, 76, 76, 0.649);
+      padding: 10px;
+      margin-left:10px;
+      margin-bottom: 20px;
+      height: 60px;
+      font-size: 20px;
+      width: 39.3%;
+   }
+   input[id=subject],input[id=message] {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(77, 76, 76, 0.649);
+      padding: 10px;
+      margin-left: 10px;
+      margin-bottom: 20px;
+      height: 60px;
+      font-size: 20px;
+      width: 80%;
+      }
+      input[id=message]{
+         height: 120px;
+      }
+   button{
+      height: 60px;
+      font-size: 23px;
+      background: #1d1d1d;
+      color: #08fdd8;
+      border: 1px solid #08fdd8;
+      padding: 20px;
+      width: 250px;
+      margin-top: 15px;
+      margin-left: 295px;
+     
+   }
+
+}
