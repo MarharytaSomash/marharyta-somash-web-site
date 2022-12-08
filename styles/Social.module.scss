@@ -1,9 +1,16 @@
-.social {
+.social{
    display: flex;
-   flex-wrap: wrap;
-   color: #909096;
-   margin: 0;
-   padding: 0;
-   list-style: none;
-   height: 20rem;
+   flex-direction: row;
+   justify-content: space-around;
+   margin: 10px;
+   width: 100%;
+      
+      .github, 
+      .linkedin, 
+      .telegram{
+                  &.active,
+                  &:hover {
+                     color: #08fdd8;
+                  }
+      }
 }

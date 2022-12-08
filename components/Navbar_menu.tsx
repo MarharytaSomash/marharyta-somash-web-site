@@ -15,11 +15,9 @@ const Navbar = () => {
                   <div className={styles.main_menu_top}>
                         <div className={styles.logo}>
                               <Link href="/" title="letter m">
-                                    <Image src={'/logo/logo.png'}
-          alt={'profile letter'} width={60} height={60} />
+                                    <Image src={'/logo/logo.png'} alt={'profile letter'} width={60} height={60} />
                                     <p>Marharyta</p>
                               </Link>
-                        
                               <p>Front End Developer </p>
                         
                         </div>

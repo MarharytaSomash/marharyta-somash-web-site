@@ -1,19 +1,27 @@
-import { social_data } from './constants/default_data';
-import Link from 'next/link';
-import styles from '../styles/Social.module.scss'
+import styles from '../styles/Social.module.scss';
+import LinkSvg from "../public/svg/linkedin";
+import GitSvg from "../public/svg/github";
+import TelegramSvg from "../public/svg/telegram";
+import SocialItemWrapper from './SocialItemWrapper';
+
 
 const Social= () => {
    return (
       <>
-         {social_data.map((el) => {
-         
-            <Link href={el.link} className={styles.social}>
-               <a target={'_blank'}>
-                  {el.icon} 
-               </a>
-            </Link>
-         })}
-      </>
-          )         
+          <SocialItemWrapper route={'https://www.linkedin.com/in/marharyta-somash-aa7010197/'}>
+               <LinkSvg />
+         </SocialItemWrapper>
+
+         <SocialItemWrapper route={'https://github.com/MarharytaSomash'}>
+               <GitSvg />
+         </SocialItemWrapper>
+
+         <SocialItemWrapper route={'https://t.me/MarharytaSomash'}>
+             <TelegramSvg />
+         </SocialItemWrapper> 
+       
+     </>
+         )         
 }
+
 export default Social;
