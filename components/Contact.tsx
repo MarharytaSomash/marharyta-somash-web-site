@@ -4,7 +4,7 @@ import Form from './Form';
 
 const Contact = () => {
    return (
-      <>
+      <div>
         <div className={styles.contact}>
                <h1> Contact me </h1>
                <p > I am open to opportunity. </p>  
@@ -12,7 +12,7 @@ const Contact = () => {
                
          </div>
          <Form/>
-         </>
+         </div>
    )
    }
 

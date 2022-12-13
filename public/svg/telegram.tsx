@@ -3,7 +3,7 @@ import styles from '../../styles/Social.module.scss';
 
 const TelegramSvg = () => {
   return (
-     <svg className={ styles.telegram} fill="grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="35px" height="35xpx">
+     <svg className={ styles.telegram} fill="grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px">
         <path d="M 25 2 C 12.309288 2 2 12.309297 2 25 C 2 37.690703 12.309288 48 25 48 
                 C 37.690712 48 48 37.690703 48 25 C 48 12.309297 37.690712 2 25 2 z M 25 4
                 C 36.609833 4 46 13.390175 46 25 C 46 36.609825 36.609833 46 25 46 C 13.390167

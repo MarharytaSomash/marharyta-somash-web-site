@@ -10,7 +10,7 @@ const Navbar = () => {
       const { pathname } = useRouter();
 
       return (
-      <>
+      <div>
           <menu className={styles.main_menu}/>
                   <div className={styles.main_menu_top}>
                         <div className={styles.logo}>
@@ -31,7 +31,7 @@ const Navbar = () => {
                   </nav>
                   <Social/>
           <menu/>  
-      </>
+      </div>
     ) 
 }
 

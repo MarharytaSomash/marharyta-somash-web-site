@@ -7,20 +7,20 @@ import SocialItemWrapper from './SocialItemWrapper';
 
 const Social= () => {
    return (
-      <>
-          <SocialItemWrapper route={'https://www.linkedin.com/in/marharyta-somash-aa7010197/'}>
+      <div className={styles.social}>
+          <SocialItemWrapper  route={'https://www.linkedin.com/in/marharyta-somash-aa7010197/'}>
                <LinkSvg />
          </SocialItemWrapper>
 
-         <SocialItemWrapper route={'https://github.com/MarharytaSomash'}>
+         <SocialItemWrapper  route={'https://github.com/MarharytaSomash'}>
                <GitSvg />
          </SocialItemWrapper>
 
-         <SocialItemWrapper route={'https://t.me/MarharytaSomash'}>
+         <SocialItemWrapper   route={'https://t.me/MarharytaSomash'}>
              <TelegramSvg />
          </SocialItemWrapper> 
        
-     </>
+     </div>
          )         
 }
 

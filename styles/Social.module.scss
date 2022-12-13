@@ -1,9 +1,11 @@
 .social{
    display: flex;
    flex-direction: row;
-   justify-content: space-around;
-   margin: 10px;
-   width: 100%;
+   justify-items: center;
+   justify-content:center;
+
+   margin: 7px;
+   width: 80%;
       
       .github, 
       .linkedin, 

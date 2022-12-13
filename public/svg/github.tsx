@@ -2,7 +2,7 @@ import styles from '../../styles/Social.module.scss';
 
 const GitSvg = () => {
   return (
-    <svg className={ styles.github} fill="grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="35px" height="35px" fill-rule="evenodd">
+    <svg className={ styles.github} fill="grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32px" height="32px" fillRule="evenodd">
       <path fill-rule="evenodd" d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 
                                   C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594
                                   C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531

@@ -3,7 +3,7 @@ import styles from '../styles/Education.module.scss'
 
 const Education = () => {
    return (
-      <>
+      <div>
       <section className={styles.about_education}>
                <h1>Education</h1>
                <h3 className={styles.education_title}> Ivan Franko National University of Lviv </h3>
@@ -43,7 +43,7 @@ const Education = () => {
                </p>
          </section>
          
-      </>
+      </div>
    )
 }
 

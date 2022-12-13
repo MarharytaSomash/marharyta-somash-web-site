@@ -1,0 +1,40 @@
+.loader_logo{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 250px;
+      p {
+            color: #a5a5a5;
+            font-size: 13px;
+            margin-bottom: 5px;
+      }
+
+      .loader {
+            display: block;
+            position: relative;
+            height: 12px;
+            width: 80%;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            overflow: hidden;
+      }
+
+      .loader:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 0;
+            background-image: repeating-linear-gradient(90deg, #00fffb 50px, #456b78 80px, #ff3c00 150px, #ff1e00 50px, );
+            animation: 4s prog ease-in infinite;
+      }
+
+      @keyframes prog {
+            to {
+                  width: 100%;
+            }
+      }
+}
+
