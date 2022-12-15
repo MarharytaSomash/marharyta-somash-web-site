@@ -3,16 +3,19 @@
    flex-direction: row;
    justify-items: center;
    justify-content:center;
-
-   margin: 7px;
-   width: 80%;
+   position: fixed;
+   width: 180px;
+   margin: 430px 0px 0px 5px;
       
       .github, 
       .linkedin, 
       .telegram{
-                  &.active,
-                  &:hover {
-                     color: #08fdd8;
+                
+               &.active,
+               &:hover {
+                     background-color:#08fdd8;
                   }
-      }
+   
+         }
+                  
 }

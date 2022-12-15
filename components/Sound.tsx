@@ -6,7 +6,7 @@ const Sound = () => {
       <div className={styles.sound}>
          <SoundSvg/>
           Sound
-         <a href=""></a>
+         {/* <a href=""></a> */}
      </div>
    )
    

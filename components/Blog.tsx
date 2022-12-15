@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 const Blog = () => {
    return (
-        <div className={styles.blog}>
-            <p > There will be some news</p>
-            
-        </div>
+            <div className={styles.blog}>
+                <p > There will be some news</p>
+                
+            </div>
       
    )
 }

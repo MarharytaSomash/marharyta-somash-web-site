@@ -23,11 +23,13 @@ const Navbar = () => {
                         </div>
                   </div>
                   <nav className={styles.main_menu_nav}>
-                        {navigation.map(({ id, title, path }) => (
-                              <Link key={id} href={ path }
-                              className={pathname === path ? styles.active : ''}> {title}
-                              </Link>
-                        ))}
+                        <span>
+                              {navigation.map(({ id, title, path }) => (       
+                                    <Link key={id} href={ path }
+                                    className={pathname === path ? styles.active : ''}> {title}
+                                    </Link>
+                              ))}
+                        </span>
                   </nav>
                   <Social/>
           <menu/>  

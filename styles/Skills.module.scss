@@ -5,21 +5,22 @@
       overflow: scroll;
       
    .about_skills{
-      width: 60%;
+      width: 98%;
       font-family: "Open Sans", sans-serif;
       padding: 10px;
+      margin-left: 10px;
 
       .skills_title{
          color: aquamarine;
          font-weight: 800;
          font-size: 60px;
-         margin: 20px;
+         margin: 10px;
          padding: 20px;
        }
       .skills_describe{
             color: azure;
             width: 80%;
-            font-size: 24px;
+            font-size: 20px;
             line-height: 30px;
            div{
             margin-bottom: 25px;
@@ -43,6 +44,8 @@
       flex-direction: column;
       flex-wrap: wrap;
       line-height: 40px;
+      margin-top: 40px;
+      margin-bottom: 30px;
     }
     .experience {
       background-color: rgba(169, 165, 165, 0.093);
@@ -52,7 +55,7 @@
 
       h2{
          color: whitesmoke;
-         font-size: 30px;
+         font-size: 25px;
          font-weight: 600;
          margin-bottom: 10px;
       }

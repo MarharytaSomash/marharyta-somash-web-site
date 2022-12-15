@@ -1,17 +1,18 @@
+@mixin main_color {
+   color: aquamarine;
+}
 .about {
-   background-color: rgba(169, 165, 165, 0.093);
-   width: 100%;
-   height: 100%;
-   padding: 10px;
+   
    display: flex;
    flex-direction: column;
-    justify-content: center;
-    overflow: scroll;
-
+   justify-content: center;
+   width: 100%;
+   padding: 10px;
+   margin: 50px 0px 0px 10px;
 
 
    .about_title {
-      color: aquamarine;
+      @include main_color;
       font-weight: 800;
       font-size: 60px;
       margin: 10px;
@@ -21,14 +22,17 @@
       .about_details {
         color: azure;
         width: 50%;
-        font-size: 40px;
-        line-height: 55px;
+        font-size: 35x;
+        line-height: 35px;
         margin-bottom: 25px;
         align-self:flex-start;
       }
       .about_details_link{
-       color: aquamarine;
+       
        font-size: 30px;
       }
+         span{
+         @include main_color;
+         }
 
 }

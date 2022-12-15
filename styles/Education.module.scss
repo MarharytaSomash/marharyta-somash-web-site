@@ -1,24 +1,28 @@
-.about_education{
-   background-color: rgba(169, 165, 165, 0.093);
-   width: 90%;
-   margin-bottom: 40px;
-   padding: 25px;
-   align-self: center;
-   h1{
+@mixin main_color {
       color: aquamarine;
+}
+
+.about_education{
+   width: 99%;
+   margin-left: 10px;
+   padding: 10px;
+   align-self: center;
+  
+   h1{
+      @include main_color;
       font-weight: 800;
       font-size: 60px;
       margin: 10px;
    } 
    h2{
-         color: aquamarine;
+         @include main_color;
          font-weight: 500;
          font-size: 50px;
          margin: 10px;
    }
    h3{
          color: whitesmoke;
-         font-weight: 500;
+         font-weight: 400;
          font-size: 30px;
          margin: 10px;
    }  
@@ -26,15 +30,17 @@
          color: darkgrey;
          font-family: "Open Sans", sans-serif;
          font-size: 24px;
-         line-height: 30px;
+         line-height: 25px;
          margin-bottom: 20px;
    }
    .education_details_link {
          color: darkgrey;
          margin-bottom: 15px;
-         font-size: 30px;
-         color: aquamarine;
-   
+         font-size: 25px;
+      
+          span {
+               @include main_color;  
+          }
    }
  
 }

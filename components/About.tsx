@@ -18,9 +18,12 @@ const About = () => {
                </p>
                
               <p className={styles.about_details_link}>
-               <Link href={'#'}>
-                 Let’s make something special
-               </Link>
+                   <span>
+                           <Link href={'https://t.me/MarharytaSomash'}>
+                             Let’s make something special
+                           </Link>
+                 </span>
+                
                </p>
          
                   
