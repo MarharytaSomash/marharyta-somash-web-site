@@ -3,7 +3,7 @@ export const navigation = [
   { id: 2, title: 'Skills & Experience', path: '/skills' },
   { id: 3, title: 'Education', path: '/education' },
   { id: 4, title: 'Contact', path: '/contact' },
-  { id: 5, title: 'Blog', path: '/blog' },
+  { id: 5, title: 'Curency', path: '/curency' },
 ];
 export  const social_data = [
   {
