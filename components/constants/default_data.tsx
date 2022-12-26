@@ -4,6 +4,7 @@ export const navigation = [
   { id: 3, title: 'Education', path: '/education' },
   { id: 4, title: 'Contact', path: '/contact' },
   { id: 5, title: 'Currency', path: '/currency' },
+
 ];
 export  const social_data = [
   {

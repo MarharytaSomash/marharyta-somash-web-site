@@ -1,3 +1,4 @@
+import React from 'react';
 import Currency from '../components/Currency';
 import styles from '../styles/Currency.module.scss'
 
