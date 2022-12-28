@@ -1,7 +1,8 @@
 import Link from "next/link";
-import styles from '../styles/Social.module.scss'
+import { FC } from "react";
+import { SocailItemWrapperType } from "./types";
 
-const SocailItemWrapper = ({ route, children }) => {
+const SocailItemWrapper:FC <SocailItemWrapperType>= ({ route, children }) => {
   return (<div>
                 <Link href={route} >
                     {children}  

@@ -1,7 +1,8 @@
 import Link from 'next/link'
+import { FC } from 'react';
 import  styles  from '../styles/Skills.module.scss'
 
-const Skills = () => {
+const Skills :FC = () => {
    return (
       
       <div className={styles.skills}>

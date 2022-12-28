@@ -1,9 +1,8 @@
 import styles from '../../styles/Currency.module.scss';
-import { useEffect, useState } from 'react';
+import { useEffect, useState,FC} from 'react';
 import CurrencyInput from './CurrencyInput';
 
-
-function CurrencyApp() {
+function CurrencyApp(){
   const [amount1, setAmount1] = useState(1);
   const [amount2, setAmount2] = useState(1);
   const [currency1, setCurrency1] = useState('UAH');
@@ -16,7 +15,7 @@ function CurrencyApp() {
  
     let requestOptions = {
       method: 'GET',
-      redirect: 'follow',
+      // redirect: 'follow',
       headers: myHeaders
     };
 
@@ -34,28 +33,30 @@ function CurrencyApp() {
     }
   },[rates])
 
-  function handleAmount1Change(amount1){
+  function handleAmount1Change(amount1:number):void{
     setAmount2(format(amount1*rates[currency2]/rates[currency1]))
     setAmount1(amount1)
+   
   }
 
-  function handleCurrency1Change(currency1){
+  function handleCurrency1Change(currency1:string):void{
     setAmount2(format(amount1*rates[currency2]/rates[currency1]))
     setCurrency1(currency1)
+  
   }
 
-  function handleAmount2Change(amount2){
+  function handleAmount2Change(amount2:number):void{
     setAmount1(format(amount2*rates[currency1]/rates[currency2]))
     setAmount2(amount2)
   }
 
-  function handleCurrency2Change(currency2){
+  function handleCurrency2Change(currency2:string):void{
     setAmount1(format(amount2*rates[currency1]/rates[currency2]))
     setCurrency2(currency2)
   }
 
-  function format(number) {
-    return number.toFixed(3)
+  function format(number:any):any{
+    return number.toFixed(2)
   }
       return (
         <div className={styles.wrapper}>

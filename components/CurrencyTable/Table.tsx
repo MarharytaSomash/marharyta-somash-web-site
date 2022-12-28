@@ -1,6 +1,7 @@
  import styles from '../../styles/Currency.module.scss';
 
-function Table(props) {
+function Table(props: any) : JSX.Element{
+	const { data, currency, course, } = props;
    return (
       <table className={styles.table}>
 					<thead>
@@ -12,7 +13,7 @@ function Table(props) {
 					</thead>
 					<tbody>
 							<tr>
-									<td>data? </td>
+									<td>{data} </td>
 									<td>currency?</td>
 									<td> course of currency?</td>
 

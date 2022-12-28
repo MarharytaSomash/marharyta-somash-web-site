@@ -1,20 +1,23 @@
+
 import styles from '../../styles/Currency.module.scss';
 
-function CurrencyInput(props) {
+function CurrencyInput ( props:any) {
+   const { amount, currency, currencies, onAmountChange, onCurrencyChange } = props;
    return (
       <div className={styles.group}>
         
          <input className={styles.input}
             type="number"
-            value={props.amount}
-            onChange={e => props.onAmountChange(e.target.value)} />
+            value={amount}
+            onChange={e => onAmountChange(e.target.value)} />
         
          <select className={styles.select}
-            value={props.currency}
-            onChange={e => props.onCurrencyChange(e.target.value)}>
+            value={currency}
+            onChange={e => onCurrencyChange(e.target.value)}>
               
-               {props.currencies.map((currency) => (
-               <option value={currency}> {currency}</option>
+               {currencies.map((currency:string) => (
+                  <option value={currency}> {currency}</option>
+                  
                ))}
          </select>
          

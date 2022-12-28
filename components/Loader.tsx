@@ -1,7 +1,8 @@
 import styles from '../styles/Loader.module.scss';
 import Image from 'next/image';
+import { FC } from 'react';
 
-const Loader = () => {
+const Loader:FC = () => {
    return (
   
       <div className={styles.loader_logo}>

@@ -14,8 +14,8 @@ useEffect(() => {
 
 	let requestOptions = {
 	method: 'GET',
-	redirect: 'follow',
-	headers: myHeaders
+	// redirect: 'follow',
+	headers: myHeaders,
 	};
 
 	fetch("https://api.apilayer.com/fixer/latest?base=USD&symbols=UAH,USD,EUR,PLN", requestOptions)
@@ -28,7 +28,7 @@ useEffect(() => {
 console.log(rates)
 	
 	if (error) {
-    return <div>Error: {error.message}</div>;
+    return <div> This is error...</div>;
   } else {
 		return (
 		 <>

@@ -4,11 +4,12 @@ import styles from '../styles/Navbar_menu.module.scss';
 import { navigation } from './constants/default_data';
 import Image from 'next/image';
 import Social from './Social';
+import { FC } from 'react';
 
 
-const Navbar = () => {
+const Navbar:FC = () => {
       const { pathname } = useRouter();
-
+      
       return (
       <div>
           <menu className={styles.main_menu}/>

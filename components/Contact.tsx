@@ -1,8 +1,9 @@
+import { FC } from 'react';
 import styles from '../styles/Contact.module.scss';
 import Form from './Form';
 
 
-const Contact = () => {
+const Contact:FC = () => {
    return (
       <div>
         <div className={styles.contact}>

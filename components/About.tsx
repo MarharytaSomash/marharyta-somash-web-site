@@ -1,7 +1,8 @@
 import styles from '../styles/About.module.scss';
 import Link from 'next/link';
+import { FC } from 'react';
 
-const About = () => {
+const About:FC = () => {
    return (
         <div className={styles.about}>
                <h1 className={styles.about_title}>About myself</h1>

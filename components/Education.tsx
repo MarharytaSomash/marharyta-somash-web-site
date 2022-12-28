@@ -1,7 +1,8 @@
 import Link from 'next/link';
+import { FC } from 'react';
 import styles from '../styles/Education.module.scss'
 
-const Education = () => {
+const Education:FC = () => {
    return (
       <div>
       <section className={styles.about_education}>

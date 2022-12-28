@@ -3,9 +3,10 @@ import LinkSvg from "../public/svg/linkedin";
 import GitSvg from "../public/svg/github";
 import TelegramSvg from "../public/svg/telegram";
 import SocialItemWrapper from './SocialItemWrapper';
+import { FC } from 'react';
 
 
-const Social= () => {
+const Social:FC = () => {
    return (
       <div className={styles.social}>
           <SocialItemWrapper  route={'https://www.linkedin.com/in/marharyta-somash-aa7010197/'}>
