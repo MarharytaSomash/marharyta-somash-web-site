@@ -3,6 +3,9 @@ import Head from 'next/head';
 import Layout from '../components/Layout';
 import { useState, useEffect } from 'react';
 import Loader from '../components/Loader';
+import {store } from '../store';
+import { Provider } from 'react-redux';
+
 
 export default function App({ Component, pageProps }) {
   
@@ -12,8 +15,8 @@ export default function App({ Component, pageProps }) {
   }, [])
  
       return (
-      <>
-          
+      <Provider store={store}>
+         
           {loading ? <Loader/> :
            <Layout>
               <Head>
@@ -25,7 +28,7 @@ export default function App({ Component, pageProps }) {
             </Layout>
           }
 
-      </>
-        
+      </Provider>
+         
       )
 }

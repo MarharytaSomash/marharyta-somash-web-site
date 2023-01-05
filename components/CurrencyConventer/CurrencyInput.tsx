@@ -14,7 +14,7 @@ function CurrencyInput ( props:any) {
          <select className={styles.select}
             value={currency}
             onChange={e => onCurrencyChange(e.target.value)}>
-              
+            
                {currencies.map((currency:string) => (
                   <option value={currency}> {currency}</option>
                   

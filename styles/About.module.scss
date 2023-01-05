@@ -1,13 +1,17 @@
 @mixin main_color {
    color: aquamarine;
 }
+.aboutModule{
+   display: flex;
+   flex-direction: row;
+    
+}
 .about {
    
    display: flex;
    flex-direction: column;
    justify-content: center;
    width: 100%;
-   padding: 10px;
    margin: 50px 0px 0px 10px;
 
 
@@ -16,19 +20,17 @@
       font-weight: 800;
       font-size: 60px;
       margin: 10px;
-
+     
    }
-
       .about_details {
         color: azure;
-        width: 50%;
+        width: 100%;
         font-size: 35x;
         line-height: 35px;
         margin-bottom: 25px;
         align-self:flex-start;
       }
       .about_details_link{
-       
        font-size: 30px;
       }
          span{

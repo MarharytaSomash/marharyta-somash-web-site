@@ -1,13 +1,30 @@
 import Link from 'next/link'
-import { FC } from 'react';
-import  styles  from '../styles/Skills.module.scss'
+import { FC, useState } from 'react';
+import styles from '../styles/Skills.module.scss';
+import { useSpring, animated } from '@react-spring/web';
 
-const Skills :FC = () => {
+const Skills: FC = () => {
+   const [state, toggle] = useState(true)
+   const { x } = useSpring({
+      from: { x: 0 },
+      x: state ? 1 : 0,
+      config: { duration: 1000 },
+      })
+
    return (
       
       <div className={styles.skills}>
          <div className={styles.about_skills}>
-               <h1 className={styles.skills_title}> Skills & Experience</h1>
+            <animated.h1 className={styles.skills_title}
+                    onMouseMove={() => toggle(!state)}
+                     style={{ scale: x.to({
+                     range: [0, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 1],
+                     output: [1, 0.97, 0.9, 1.1, 0.9, 1.1, 1.03, 1],
+                     })
+                     }}
+            >
+               Skills & Experience
+            </animated.h1>
                <div className={styles.skills_describe}>
                      <div> In my previous job , i have worked for 2 years as a commodity market research analyst where I organised  of marketing research, analysis of the market and brands of competitors, preparation of sales reports and sales analysis, product sales planning.
                      This  experience  has made to improve my planning skills and organisation.</div>

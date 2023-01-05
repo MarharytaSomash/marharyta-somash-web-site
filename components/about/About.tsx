@@ -1,11 +1,31 @@
-import styles from '../styles/About.module.scss';
+import styles from '../../styles/About.module.scss';
 import Link from 'next/link';
-import { FC } from 'react';
+import { FC,useState} from 'react';
+import { useSpring, animated } from '@react-spring/web'
 
-const About:FC = () => {
+
+const About: FC = () => {
+   const [state, toggle] = useState(true)
+   const { x } = useSpring({
+         from: { x: 0 },
+         x: state ? 1 : 0,
+         config: { duration: 1000 },
+      })
+   
+   
    return (
         <div className={styles.about}>
-               <h1 className={styles.about_title}>About myself</h1>
+         <animated.h1 className={styles.about_title} 
+                     onMouseMove={() => toggle(!state)}
+                     style={{ scale: x.to({
+                     range: [0, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 1],
+                     output: [1, 0.97, 0.9, 1.1, 0.9, 1.1, 1.03, 1],
+                     })
+                     }}
+         > 
+            About myself 
+            
+        </animated.h1>
                <p className={styles.about_details}>
                   I’m a Front-End Developer located in Kyiv.
                </p>

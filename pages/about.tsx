@@ -1,10 +1,14 @@
-import About from '../components/About';
+import About from '../components/about/About';
+import SphereAbout from '../components/about/SphereAbout';
 import styles from '../styles/About.module.scss'
 
 const about = () => {
    return (
-   <About/>
-      
+      <div className={styles.aboutModule}>
+         <About />
+         <SphereAbout/>
+      </div>
+  
    )
 }
 

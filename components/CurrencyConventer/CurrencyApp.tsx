@@ -1,6 +1,8 @@
 import styles from '../../styles/Currency.module.scss';
 import { useEffect, useState,FC} from 'react';
 import CurrencyInput from './CurrencyInput';
+import { useSpring, animated } from '@react-spring/web';
+
 
 function CurrencyApp(){
   const [amount1, setAmount1] = useState(1);
@@ -8,14 +10,20 @@ function CurrencyApp(){
   const [currency1, setCurrency1] = useState('UAH');
   const [currency2, setCurrency2] = useState('USD');
   const [rates, setRates] = useState([])
- 
+  const [state, toggle] = useState(true)
+  const { x } = useSpring({
+        from: { x: 0 },
+        x: state ? 1 : 0,
+        config: { duration: 1000 },
+      })
+
+
   useEffect(() => {
     let myHeaders = new Headers();
     myHeaders.append("apikey", "0z3fXjStjbi7qwG7KTUYnimW1hhUce2s");
  
     let requestOptions = {
       method: 'GET',
-      // redirect: 'follow',
       headers: myHeaders
     };
 
@@ -60,7 +68,16 @@ function CurrencyApp(){
   }
       return (
         <div className={styles.wrapper}>
-          <h1>Currency Conventer</h1>
+          <animated.h1
+                     onMouseMove={() => toggle(!state)}
+                     style={{ scale: x.to({
+                     range: [0, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 1],
+                     output: [1, 0.97, 0.9, 1.1, 0.9, 1.1, 1.03, 1],
+               })
+            }}
+          >
+            Currency Conventer
+          </animated.h1>
           <CurrencyInput
             onAmountChange={handleAmount1Change}
             onCurrencyChange={handleCurrency1Change}

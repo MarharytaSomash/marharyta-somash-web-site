@@ -9,17 +9,29 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-spring/web": "^9.6.1",
+    "@react-three/drei": "^9.51.3",
+    "@react-three/fiber": "^8.10.0",
+    "@reduxjs/toolkit": "^1.9.1",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
+    "animate.css": "^4.1.1",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.5",
     "next": "13.0.5",
+    "random-words": "^1.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-redux": "^8.0.5",
+    "react-transition-group": "^4.4.5",
+    "redux": "^4.2.0",
+    "three": "^0.148.0",
     "typescript": "4.9.3"
   },
   "devDependencies": {
+    "@types/react-transition-group": "^4.4.5",
+    "@types/three": "^0.148.0",
     "sass": "^1.56.1"
   }
 }
