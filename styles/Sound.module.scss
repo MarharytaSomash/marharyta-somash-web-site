@@ -7,14 +7,22 @@
       fill: #FD1056;
    }
 }
-.sound a:before {
-     content: 'OFF';
+// .sound{
+   .button {
+   //   content: 'OFF';
      cursor: pointer;
      color: #FD1056;
      transition: none;
      margin-left: 5px;
      
 }
+// }
+ 
+//  .button activated:before {
+//    content: 'ON';
+//    color: #08FDD8;
+
+// }
 @media screen and (max-width: 600px) {
    .sound {
       font-size: 15px;

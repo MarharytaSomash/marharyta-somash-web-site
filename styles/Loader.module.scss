@@ -10,7 +10,7 @@
       p {
             color: #a5a5a5;
             font-size: 13px;
-            margin-bottom: 5px;
+            margin-bottom: 12px;
       }
 
       .loader {
@@ -30,7 +30,7 @@
             top: 0;
             height: 100%;
             width: 0;
-            background-image: repeating-linear-gradient(90deg, #00fffb 50px, #456b78 80px, #ff3c00 150px, #ff1e00 50px, );
+            background-image: repeating-linear-gradient(200deg, #00fffb 50px, #326c80 100px, #543d7b 150px,  );
             animation: 4s prog ease-in infinite;
       }
 

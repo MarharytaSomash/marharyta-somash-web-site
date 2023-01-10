@@ -2,7 +2,7 @@ import * as THREE from 'three'
 import { useRef, useMemo} from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Text, TrackballControls } from '@react-three/drei'
-import styles from '../../styles/sphereAbout.module.scss'
+import styles from '../../styles/About/About.module.scss';
 
 
 function Word({ children, ...props }) {

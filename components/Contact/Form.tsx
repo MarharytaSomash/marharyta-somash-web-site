@@ -1,7 +1,8 @@
-import styles from '../styles/Form.module.scss'
+import styles from '../../styles/Contact/Form.module.scss'
 
 export default function Form() {
-       return (
+  return (
+        
     <form className={styles.form} action="/api/form" method="post">
       <label htmlFor="name"></label>
       <input type="text" id="name" name="name"  placeholder="Name" required />
@@ -16,6 +17,7 @@ export default function Form() {
       <input type="text" id="message" name="message" placeholder="Message" required />
       
       <button type="submit">Send message!</button>
-    </form>
+         </form>
+     
   )
 }

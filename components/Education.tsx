@@ -31,7 +31,15 @@ const Education: FC = () => {
                </p>
       </section>
        <section className={styles.about_education}>
-            <h2>Additional education:</h2>
+            <animated.h2 onMouseMove={() => toggle(!state)}
+                     style={{ scale: x.to({
+                     range: [0, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 1],
+                     output: [1, 0.97, 0.9, 1.1, 0.9, 1.1, 1.03, 1],
+                     })
+                     }}
+            >
+               Additional education:
+            </animated.h2>
                <h3 className={styles.education_title}> 2022-to present, Front End course at Ciclum </h3>
                <p className={styles.education_details_link}>
                  <span>

@@ -1,6 +1,12 @@
 .contact{
      margin: 40px 0px 0px 10px;
-     
+     display: flex;
+     flex-direction: row;
+}
+    
+  .contact_details {
+            display: flex;
+            flex-direction: column;
    h1{
       color: aquamarine;
       font-weight: 600;
@@ -10,7 +16,7 @@
 
     p {
          color: azure;
-         width: 40%;
+        max-width: 95%;
          font-size: 23px;
          line-height: 30px;
          padding: 10px;
@@ -18,3 +24,10 @@
         
     }
 }
+@media screen and (max-width: 896px) {
+  .contact {
+     display: flex;
+     flex-direction: column;
+}   
+}
+ 

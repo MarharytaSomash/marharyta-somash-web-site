@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { FC, useState } from 'react';
+import ProgressBar from './ProgressBar'
 import styles from '../styles/Skills.module.scss';
 import { useSpring, animated } from '@react-spring/web';
 
@@ -33,34 +34,41 @@ const Skills: FC = () => {
                      <div> Visit my profile <Link href={'https://www.linkedin.com/in/marharyta-somash-aa7010197/'}> <a target={'_blank'}></a> LinkedIn </Link>profile for more details or just <Link href={'/contact'}> <a target={'_blank'}></a>contact me.</Link> </div>
             </div>
        </div>
-               <div className={styles.skills_experience}> 
-                     <div className={styles.skills_list}>
+           <div className={styles.skills_experience}> 
+                <div className={styles.skills_list}>
+               
                         <p>React</p>
+                        <ProgressBar done="98"  />
                         <p>Redux</p>
+                        <ProgressBar done="70" />
                         <p>Next JS</p>
+                        <ProgressBar done="98" />
                         <p>Node JS</p>
+                        <ProgressBar done="80" />
                         <p>Typescript</p>
-                        <p>Javascript</p>
+                        <ProgressBar done="90" />
                         <p>Git</p>
-                        <p>HTML</p>
-                        <p>Scc/Scss</p>
-                     </div>
-                     <section className={styles.experience}>
-                        <h2> Analyst in commodity market research </h2>
-                        <h3>LLC "MD Eurotrade", Kyiv</h3>
-                        <h4>11.2019 – 08.2021</h4>
-                        <p>Organization of marketing research, analysis of the market and brands of competitors</p>
-                        <p>Preparation of sales reports and sales analysis;</p>
-                     </section>
-                     <section className={styles.experience}>
-                        <h2> Economist of the planning and analytical department</h2>
-                        <h3>PJSC "Tavria, House of vintage cognacs", Nova Khahovka</h3>
-                        <h4>11.2017 - 07.2019</h4>
-                        <p>Compilation and submission of statistical reports</p>
-                        <p>Calculation of efficiency of export supply</p>
-                        <p>Development of free selling and retail prices for products.</p>
-                     </section>
-               </div>
+                        <ProgressBar done="100" />
+                        
+                  </div>
+                    
+                        <section className={styles.experience}>
+                           <h2> Analyst in commodity market research </h2>
+                           <h3>LLC "MD Eurotrade", Kyiv</h3>
+                           <h4>11.2019 – 08.2021</h4>
+                           <p>Organization of marketing research, analysis of the market and brands of competitors</p>
+                           <p>Preparation of sales reports and sales analysis;</p>
+                        </section>
+                        <section className={styles.experience}>
+                           <h2> Economist of the planning and analytical department</h2>
+                           <h3>PJSC "Tavria, House of vintage cognacs", Nova Khahovka</h3>
+                           <h4>11.2017 - 07.2019</h4>
+                           <p>Compilation and submission of statistical reports</p>
+                           <p>Calculation of efficiency of export supply</p>
+                           <p>Development of free selling and retail prices for products.</p>
+                      </section>
+                   
+            </div>
          
      </div>  
    )

@@ -1,5 +1,5 @@
 import Navbar from "./Navbar_menu";
-import Sound from "./Sound";
+import Sound from "./Sounds/Sound";
 import style from '../styles/Layout.module.scss';
 
 const Layout = ({ children }:any) => {

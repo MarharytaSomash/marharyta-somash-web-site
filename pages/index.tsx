@@ -1,5 +1,5 @@
 import About from '../components/about/About';
-import Contact from '../components/Contact';
+import Contact from '../components/Contact/Contact';
 import styles from '../styles/HomePage.module.scss';
 import Education from '../components/Education';
 import Skills from '../components/Skills';

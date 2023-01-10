@@ -90,3 +90,10 @@
    
     }
 }
+
+@media screen and (max-width: 896px) {
+   .currency {
+         display: flex;
+         flex-direction: column;
+      }
+}

@@ -1,4 +1,4 @@
-import Sound from '../components/Sound';
+import Sound from '../components/Sounds/Sound';
 import styles from '../styles/Sound.module.scss'
 
 const sound = () => {
