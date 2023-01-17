@@ -3,6 +3,7 @@ import { FC, useState } from 'react';
 import styles from '../styles/Education.module.scss';
 import { useSpring, animated } from '@react-spring/web';
 
+
 const Education: FC = () => {
    const [state, toggle] = useState(true)
    const { x } = useSpring({
@@ -79,7 +80,7 @@ const Education: FC = () => {
                  
                </p>
          </section>
-         
+      
       </div>
    )
 }

@@ -4,7 +4,9 @@ import Form from './Form';
 import Map from './Map';
 import { useSpring, animated } from '@react-spring/web'
 
+
 const Contact: FC = () => {
+
       const [state, toggle] = useState(true)
       const { x } = useSpring({
             from: { x: 0 },
@@ -16,6 +18,7 @@ const Contact: FC = () => {
      
       <div className={styles.contact}>
          <div className={styles.contact_details}>
+             <span className={styles.topTags}></span> 
             <animated.h1
                       onMouseMove={() => toggle(!state)}
                      style={{ scale: x.to({
@@ -30,11 +33,13 @@ const Contact: FC = () => {
             </animated.h1>
                <p > I am open to opportunity. </p>  
                <p> If you have  question, don't hesitate to use the form.</p> 
-          <Form />
+            <Form />
+             <span className={styles.bottomTags}></span> 
          </div>    
          
                 
-                <Map/>
+         <Map />
+        
          </div>
         
         

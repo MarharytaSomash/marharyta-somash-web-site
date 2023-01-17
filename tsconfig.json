@@ -22,4 +22,5 @@
     "components/about/SphereAbout.tsx"
   ],
   "exclude": ["node_modules"]
+  
 }

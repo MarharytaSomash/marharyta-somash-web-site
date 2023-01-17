@@ -3,8 +3,9 @@ import Contact from '../components/Contact/Contact';
 import styles from '../styles/HomePage.module.scss';
 import Education from '../components/Education';
 import Skills from '../components/Skills';
-import Currency from '../components/Currency';
+import Currency from '../components/News';
 import SphereAbout from '../components/about/SphereAbout';
+import ScrollDown from '../components/ScrollDown';
 
 
 
@@ -13,10 +14,11 @@ export default function HomePage() {
     <div className={styles.wrapper}>
 
           <About />
-          <SphereAbout/>
-          <Skills/>
+          <ScrollDown/>
+          <SphereAbout />
+          <Skills />
           <Education />
-          <Contact/>
+          <Contact />
           <Currency/>
     </div>
   )

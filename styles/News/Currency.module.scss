@@ -4,6 +4,12 @@
    display: flex;
    flex-direction: row;
 }
+.title{
+   color: aquamarine;
+   font-size: 17px;
+   margin-bottom: 20px;
+ 
+}
 .wrapper{
       background-color: rgb(198, 207, 207);
       display: flex;
@@ -20,14 +26,15 @@
       font-family: 'Inter', system-ui !important;
       box-sizing: border-box;
       border-radius: 15px;
-   h1 {
+      height: 50%;
+   h2 {
       display: flex;
       justify-content: center;
       align-items: center;
       align-self: center;  
       color: azure;
       font-size: 25px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
    
    &:hover{
       color: aquamarine;
@@ -60,40 +67,10 @@
    padding: 10px;
 }
 
-.table{
-   
-   background-color: rgb(24, 20, 20);
-   padding: 5px;
-   margin: 50px 10px 50px 30px;
-   max-width: 550px;
-    border-collapse: collapse;
-   
-    th,td{
-         border: 1px solid #335;
-         border-radius: 5px;
-         color: azure;
-   }
-   th{
-      font-size: 20px;
-       padding: 5px;
-   
-      &:hover {
-         color: aquamarine;
-      }
-  }
-    td{
-      
-      align-items: center;
-      justify-content: center;
-      font-size: 15px;
-      padding: 10px;
-   
-    }
-}
-
 @media screen and (max-width: 896px) {
    .currency {
          display: flex;
          flex-direction: column;
       }
 }
+

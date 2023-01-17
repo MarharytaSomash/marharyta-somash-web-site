@@ -2,6 +2,8 @@ import styles from '../../styles/About/About.module.scss';
 import Link from 'next/link';
 import { FC,useState} from 'react';
 import { useSpring, animated } from '@react-spring/web'
+import Drag from '../Drag';
+
 
 
 const About: FC = () => {
@@ -14,7 +16,10 @@ const About: FC = () => {
    
    
    return (
-        <div className={styles.about}>
+      <>
+         <Drag/>
+       <div className={styles.about}>
+          <span className={styles.topTags}></span> 
                <animated.h1 className={styles.about_title} 
                            onMouseMove={() => toggle(!state)}
                            style={{ scale: x.to({
@@ -38,16 +43,21 @@ const About: FC = () => {
                   and  I successfully graduated  several IT Courses and continue to improve my English.
                </p>
                
-              <p className={styles.about_details_link}>
+              <div className={styles.about_details_link}>
                    <span>
                            <Link href={'https://t.me/MarharytaSomash'}>
                              Let’s make something special
                            </Link>
                  </span>
-               </p>   
-        </div>
-      
+               </div>   
+            <span className={styles.bottomTags}></span> 
+           
+      </div>
+     </> 
    )
 }
 
 export default About;
+
+
+

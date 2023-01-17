@@ -4,6 +4,7 @@ export default function Form() {
   return (
         
     <form className={styles.form} action="/api/form" method="post">
+       <span className={styles.topTags}></span> 
       <label htmlFor="name"></label>
       <input type="text" id="name" name="name"  placeholder="Name" required />
 
@@ -15,7 +16,7 @@ export default function Form() {
       
       <label htmlFor="message"></label>
       <input type="text" id="message" name="message" placeholder="Message" required />
-      
+       <span className={styles.bottomTags}></span> 
       <button type="submit">Send message!</button>
          </form>
      

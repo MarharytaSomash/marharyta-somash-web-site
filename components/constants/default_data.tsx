@@ -5,7 +5,7 @@ export const navigation :Array<navigationType> = [
   { id: 2, title: 'Skills & Experience', path: '/skills' },
   { id: 3, title: 'Education', path: '/education' },
   { id: 4, title: 'Contact', path: '/contact' },
-  { id: 5, title: 'Currency', path: '/currency' },
+  { id: 5, title: 'News', path: '/news' },
 
 ];
 export  const social_data: Array<social_dataType> = [

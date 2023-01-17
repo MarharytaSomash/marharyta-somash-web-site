@@ -1,3 +1,17 @@
+@mixin effect {
+     font-family: 'La Belle Aurore', cursive;
+     color: #515152;
+     font-size: 18px;
+     position: absolute;
+}
+
+.topTags:before {
+     @include effect;
+     content: '<body>';
+     margin-left: 0.3rem;
+     margin-top: -1.5rem;
+}
+
 .contact{
      margin: 40px 0px 0px 10px;
      display: flex;
@@ -24,10 +38,26 @@
         
     }
 }
+
+.bottomTags:before {
+     @include effect;
+     content: '</body>';
+     margin-left: 0.7rem;
+     margin-top: 13rem;
+}
+
 @media screen and (max-width: 896px) {
   .contact {
      display: flex;
      flex-direction: column;
-}   
+  }   
+
+.bottomTags:before {
+     @include effect;
+     content: '</body>';
+     margin-left: 0.7rem;
+     margin-top: 64rem;
+  }
+
 }
  

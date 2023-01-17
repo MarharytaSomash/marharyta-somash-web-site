@@ -3,6 +3,7 @@ import { FC, useState } from 'react';
 import ProgressBar from './ProgressBar'
 import styles from '../styles/Skills.module.scss';
 import { useSpring, animated } from '@react-spring/web';
+import ScrollDown from './ScrollDown';
 
 const Skills: FC = () => {
    const [state, toggle] = useState(true)
@@ -16,6 +17,7 @@ const Skills: FC = () => {
       
       <div className={styles.skills}>
          <div className={styles.about_skills}>
+              <span className={styles.topTags}></span> 
             <animated.h1 className={styles.skills_title}
                     onMouseMove={() => toggle(!state)}
                      style={{ scale: x.to({
@@ -69,8 +71,10 @@ const Skills: FC = () => {
                       </section>
                    
             </div>
-         
-     </div>  
+              <span className={styles.bottomTags}></span> 
+    
+      </div>  
+     
    )
 }
 

@@ -1,0 +1,27 @@
+
+
+.news {
+   margin-top: 40px;
+   padding: 20px;
+h1 {
+   color: aquamarine;
+   font-weight: 800;
+   font-size: 60px;
+   margin: 10px;
+}
+ .active,
+ :hover {
+    color: #08fdd8;
+ }
+   li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2px 5px 2px 5px;
+      margin-top: 10px;
+      color: aliceblue;
+      border-top: 1px solid rgb(78, 75, 75);
+      border-bottom: 1px solid rgb(78, 75, 75);
+      
+   }
+}

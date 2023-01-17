@@ -1,3 +1,17 @@
+@mixin effect {
+   font-family: 'La Belle Aurore', cursive;
+   color: #515152;
+   font-size: 18px;
+   position: absolute;
+}
+
+.topTags:before {
+   @include effect;
+   content: '<body>';
+   margin-left: 0.3rem;
+   margin-top: 0.5rem;
+}
+
 .skills{
       display: flex;
       flex-direction: row;
@@ -13,10 +27,28 @@
       .skills_title{
          color: aquamarine;
          font-weight: 800;
-         font-size: 60px;
-         margin: 8px;
-         padding: 15px;
+         font-size: 50px;
+         line-height: 60px;
+         margin: 10px;
+         margin-top:30px;
+         padding: 18px;
        }
+             .skills_title:before{
+                  @include effect;
+                  content: '<h2>';
+                  font-size: 16px;
+                  margin-left:-1.5rem;
+                  margin-top:-2rem;
+                  
+             }
+            .skills_title:after {
+                  @include effect;
+                  content: '</h2>';
+                  font-size: 16px;
+                  margin-left: -22rem;
+                  margin-top: 3rem;
+            } 
+            
       .skills_describe{
             color: azure;
             font-size: 20px;
@@ -70,6 +102,14 @@
 }
 }
 
+.bottomTags:before {
+   @include effect;
+   content: '</body>';
+   margin-left: -65rem;
+   margin-top: 90rem;
+
+}
+
 @media screen and (max-width: 896px) {
    .skills {
          display: flex;
@@ -107,5 +147,16 @@
             margin-bottom: 15px;
          }
    }
+ .skills_title:before {
+    margin-left: -0.1rem;
+    margin-top: -0.1rem;
 
+ }
+
+ 
+      .bottomTags:before {
+         margin-left: -0.1rem;
+         margin-top:  0.1rem;
+   
+      }
 }
