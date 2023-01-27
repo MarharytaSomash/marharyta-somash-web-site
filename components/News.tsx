@@ -4,16 +4,16 @@ import CurrencyApp from './News/CurrencyConventer/CurrencyApp';
 import Article from './News/Articles/Article';
 
 
-const Currency:FC = () => {
+const News:FC = () => {
 	return (
 
 		<div className={styles.currency}>
 			<Article/>
-			<CurrencyApp/>
+			<CurrencyApp/> 
 		</div>
 		
 	)
 	
 }
 
-export default Currency
+export default News

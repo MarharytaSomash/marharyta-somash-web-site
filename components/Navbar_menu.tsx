@@ -3,17 +3,17 @@ import { useRouter } from 'next/router';
 import styles from '../styles/Navbar_menu.module.scss';
 import { navigation } from './constants/default_data';
 import Image from 'next/image';
-import Social from './Social';
-import { FC } from 'react';
-
+import Social from './Social/Social';
+import { FC} from 'react';
 
 const Navbar:FC = () => {
       const { pathname } = useRouter();
       
       return (
       <div>
+          
           <menu className={styles.main_menu}/>
-                  <div className={styles.main_menu_top}>
+                  <div className={styles.main_menu_top} >
                         <div className={styles.logo}>
                               <Link href="/" title="letter m">
                                     <Image src={'/logo/logo.png'} alt={'profile letter'} width={60} height={60} />
@@ -34,6 +34,7 @@ const Navbar:FC = () => {
                   </nav>
                   <Social/>
           <menu/>  
+          
       </div>
     ) 
 }

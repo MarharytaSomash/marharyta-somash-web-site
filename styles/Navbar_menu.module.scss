@@ -4,15 +4,13 @@
    justify-content: center;
    align-items: center;
 }
+
 .main_menu {
-   
    @include flex_column;
    background-color: #000000;
    box-sizing: border-box;
    font-size: 14px;
    width: 200px;
-  
-   
 }
 
 .main-menu__top {
@@ -40,12 +38,7 @@
       color: #a5a5a5;
       font-size: 15px;
 }
-@media screen and (max-width: 1300px) 
-{.main-menu .logo svg {
-   width: 5rem;
-   height: auto;
-}
-}
+
 .main_menu_nav{ 
    width: 190px;
    @include flex_column;
@@ -56,7 +49,7 @@
    position: fixed;
    z-index: 1;
    left:10px;
-   
+   transition: opacity 0.4s ease;
       
      span {
       
@@ -72,4 +65,16 @@
             }
       } 
        
+}
+@media screen and (max-width: 896px) {
+
+   .main-menu_active,
+   .main-menu__top,
+   .main_menu_nav,
+   .logo {
+          display: none;
+     
+   }
+     
+          
 }

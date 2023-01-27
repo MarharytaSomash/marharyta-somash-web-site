@@ -5,7 +5,6 @@ import { useSpring, animated } from '@react-spring/web'
 import Drag from '../Drag';
 
 
-
 const About: FC = () => {
    const [state, toggle] = useState(true)
    const { x } = useSpring({

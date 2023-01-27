@@ -11,15 +11,19 @@ import ScrollDown from '../components/ScrollDown';
 
 export default function HomePage() {
   return (
-    <div className={styles.wrapper}>
+    <>
+        <div className={styles.wrapper}>
 
-          <About />
-          <ScrollDown/>
-          <SphereAbout />
-          <Skills />
-          <Education />
-          <Contact />
-          <Currency/>
-    </div>
+              <About />
+              <ScrollDown/>
+              <SphereAbout />
+              <Skills />
+              <Education />
+              <Contact />
+              <Currency/>
+          </div>
+  
+    </>
+    
   )
 }

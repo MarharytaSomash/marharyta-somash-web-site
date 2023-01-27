@@ -1,7 +1,8 @@
 import Navbar from "./Navbar_menu";
 import Sound from "./Sounds/Sound";
 import style from '../styles/Layout.module.scss';
-import ScrollDown from "./ScrollDown";
+import BurgersMenu from "./BurgersMenu";
+
 
 const Layout = ({ children }:any) => {
 
@@ -9,6 +10,7 @@ const Layout = ({ children }:any) => {
          <div className={style.wrap_layout}>
             <Sound />
             <Navbar />
+            <BurgersMenu/>
             {children}   
          </div>
           )

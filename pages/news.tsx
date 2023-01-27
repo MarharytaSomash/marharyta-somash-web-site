@@ -2,11 +2,11 @@ import React from 'react';
 import News from '../components/News';
 
 
-const currency = () => {
+const news = () => {
    return (
    <News/>
       
    )
 }
 
-export default currency;
+export default news;

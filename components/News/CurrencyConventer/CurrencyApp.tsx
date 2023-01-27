@@ -21,7 +21,7 @@ function CurrencyApp(){
 
   useEffect(() => {
     let myHeaders = new Headers();
-    myHeaders.append("apikey", "lDxDtR3Ns6jdASlJGE3DC4oFYPFx2khu");
+    myHeaders.append("apikey", "Z6pPDHL9tiDZ4Ixcij0jkqIdNws2QaQb");
  
     let requestOptions = {
       method: 'GET',
