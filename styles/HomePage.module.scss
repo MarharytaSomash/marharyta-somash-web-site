@@ -1,4 +1,17 @@
  .wrapper {
       display: flex;
       flex-direction: column;
+      
    }
+@media screen and (max-width: 896px) {
+
+   .main-menu_active,
+   .main-menu__top,
+   .main_menu_nav,
+   .logo {
+      display: none;
+
+   }
+
+
+}

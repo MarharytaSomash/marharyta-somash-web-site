@@ -2,7 +2,7 @@ import * as THREE from 'three'
 import { useRef, useMemo} from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Text, TrackballControls } from '@react-three/drei'
-import styles from '../../styles/About/About.module.scss';
+import styles from '../../styles/About/sphereAbout.module.scss';
 
 
 function Word({ children, ...props }) {
@@ -38,15 +38,15 @@ function Cloud({ count = 4, radius = 20 }) {
   }, [count, radius])
 
   return words.map(([pos, word], index) =>
-    <Word key={index} position={pos} children={word} />)
+    <Word children={word}  key={index} position={pos} />)
 }
 
 export default function SphereAbout() {
- 
-      return (
-        <Canvas  className={styles.sphereAbout} dpr={[1, 2]} camera={{ position: [0, 0, 35], fov: 90 }}>
-          <fog attach="fog" args={['#08fdd8', 0, 0]} />
-          <Cloud count={6} radius={20}/>
+// 
+  return (
+        <Canvas className={styles.sphereAbout} dpr={[1, 2]} camera={{ position: [0, 0, 35], fov: 90 }} >
+          <fog attach="fog"  args={['#08fdd8', 0, 0]} />
+          <Cloud  count={6} radius={30}/>
           <TrackballControls />
         </Canvas>
       )

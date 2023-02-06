@@ -16,7 +16,8 @@ const About: FC = () => {
    
    return (
       <>
-         <Drag/>
+        
+            <Drag />
        <div className={styles.about}>
           <span className={styles.topTags}></span> 
                <animated.h1 className={styles.about_title} 
@@ -51,7 +52,8 @@ const About: FC = () => {
                </div>   
             <span className={styles.bottomTags}></span> 
            
-      </div>
+            </div>
+            
      </> 
    )
 }

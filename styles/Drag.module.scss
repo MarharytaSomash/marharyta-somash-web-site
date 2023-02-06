@@ -1,56 +1,31 @@
 .hooksMain>div {
    position: absolute;
    will-change: transform;
-   border-radius: 80%;
-   background-color: #08fdd8;
-   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+   border-radius: 60%;
+   background:linear-gradient(90deg, rgb(2, 62, 54) 0%, rgb(21, 162, 138) 35%, rgba(0, 212, 255, 1) 100%);
    opacity: 0.6;
    
 }
 
-.hooksMain>div:nth-child(1) {
-   width: 40px;
-   height: 40px;
+.hooksMain>div {
+   width: 10px;
+   height: 10px;
 }
 
 .hooksMain>div:nth-child(2) {
-   width: 90px;
-   height: 90px;
-}
-
-.hooksMain>div:nth-child(3) {
-   width: 60px;
-   height: 60px;
-}
-
-.hooksMain>div::after {
-   content: '';
-   position: absolute;
-   top: 20px;
-   left: 20px;
-   width: 15px;
-   height: 15px;
-   border-radius: 50%;
-   background: rgba(255, 255, 255, 0.8);
-}
-
-.hooksMain>div:nth-child(2)::after {
-   top: 35px;
-   left: 35px;
-   width: 30px;
-   height: 30px;
-}
-
-.hooksMain>div:nth-child(3)::after {
-   top: 25px;
-   left: 25px;
    width: 20px;
    height: 20px;
 }
 
+.hooksMain>div:nth-child(3) {
+   width: 20px;
+   height: 20px;
+}
+
+
 .hooksMain {
    position: absolute;
-   width: 100%;
+   width: 70%;
    height: 100%;
    filter: url('#goo');
    overflow: hidden;
@@ -63,3 +38,14 @@
    user-select: none;
    cursor: default;
 }
+
+
+.trail {
+
+   position: absolute;
+   height: 6px;
+   width: 6px;
+   border-radius: 3px;
+   background: teal;
+}
+

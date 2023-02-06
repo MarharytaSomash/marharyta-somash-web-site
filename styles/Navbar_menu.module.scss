@@ -27,7 +27,7 @@
       margin: 45px 0px 0px 0px;
       padding: 5px;
       position: fixed;
-      z-index: 1;
+      z-index: 99;
    
 }
 .logo p{
@@ -47,7 +47,7 @@
    margin-top: 170px;
    margin-bottom: 25px;
    position: fixed;
-   z-index: 1;
+   z-index: 100;
    left:10px;
    transition: opacity 0.4s ease;
       
@@ -59,7 +59,9 @@
          font-size: 20px;
          color: whitesmoke;
          line-height: 50px;
-         
+           .default{
+            color:#a5a5a5
+           }
             .active,:hover {
                color: #08fdd8;
             }

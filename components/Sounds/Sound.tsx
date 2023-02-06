@@ -18,6 +18,7 @@ const Sound: FC = () => {
           <span>Sound</span>
           <button className={styles.button} onClick={() => handleClick()} > OFF </button> ;
      </div> 
+     
    )
    
 }

@@ -1,7 +1,7 @@
 import styles from '../../../styles/News/Article.module.scss';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-
+import { v4 as uuidv4 } from 'uuid';
 
 
 function Article(): JSX.Element {
@@ -35,8 +35,8 @@ function Article(): JSX.Element {
 			   
 				<div className={styles.news}>
 					<h1>Latest world news:</h1>
-					<ul>{newarr?.map(({ link, title, source_id }) =>
-							<li key={source_id}>
+					<ul>{newarr?.map(({ link, title, source_id}) =>
+						<li className={styles.link} key={source_id}>
 									<Link href={link}> ○ {title} </Link>
 							</li>)}
 					</ul>
