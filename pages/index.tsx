@@ -6,18 +6,16 @@ import Skills from '../components/Skills';
 import Currency from '../components/News';
 import SphereAbout from '../components/about/SphereAbout';
 import ScrollDown from '../components/ScrollDown';
-import SomeMenu from '../components/SomeMenu';
-
+ 
 
 
 export default function HomePage() {
   return (
     <>
       <div className={styles.wrapper}>
-              <SomeMenu />
               <About />
               <ScrollDown/>
-              <SphereAbout />
+              <SphereAbout/>
               <Skills />
               <Education />
               <Contact />

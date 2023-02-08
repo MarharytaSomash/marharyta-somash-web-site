@@ -1,4 +1,4 @@
-import styles from '../../styles/Social.module.scss';
+import styles from '../../styles/MobileMenu.module.scss';
 
 const BurgerSvg = () => {
     return (

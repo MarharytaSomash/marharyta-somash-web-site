@@ -7,50 +7,31 @@
    width: 180px;
    margin: 430px 0px 0px 5px;
       
-      .github, 
-      .linkedin, 
-      .telegram{
-                
-               &.active,
-               &:hover {
-                     background-color:#08fdd8;
-                  }
-   
-         }
-                 
+         .github,
+         .linkedin,
+         .telegram {
+            
+            &.active,
+            &:hover {
+               background-color: #08fdd8;
+            }
+      
+         }         
                   
 } 
-   .burger_menu,
-   .close{
-         display: none;
-         }
-
 @media screen and (max-width: 896px) {
-   .burger_menu, .close {
-         position: fixed;
-         top: 15px;
-         right: 20px;
-         width: 3rem;
-         height: 3rem;
-         z-index: 100;
-         background-color: rgba(0, 0, 0, 0.3);
-         display: -webkit-box;
-         display: -ms-flexbox;
-         display: flex;
-         -webkit-box-align: center;
-         -ms-flex-align: center;
-         align-items: center;
-         -webkit-box-pack: center;
-         -ms-flex-pack: center;
+   .social{
+      display: flex;
+         flex-direction: column;
+         justify-items: center;
          justify-content: center;
-         border-radius: 3px;
+         margin: 430px 0px 0px 30px;
+         
+            .github,
+            .linkedin,
+            .telegram {
+                margin: 5px;
+               }
+         
    }
-   .close{
-          background-color: rgba(112, 110, 110, 0.436);
-   }
-      .github,
-      .linkedin,
-      .telegram {
-                display:none
-      }
-   }
+}

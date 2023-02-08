@@ -1,8 +1,10 @@
  .wrapper {
       display: flex;
       flex-direction: column;
-      
+       width: 90% !important;
    }
+
+   
 @media screen and (max-width: 896px) {
 
    .main-menu_active,
@@ -10,8 +12,6 @@
    .main_menu_nav,
    .logo {
       display: none;
-
    }
-
 
 }

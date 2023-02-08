@@ -3,9 +3,9 @@
 }
 
 .about_education{
-   width: 100%;
-//    margin-left: 10px;
-
+//    width: 100%;
+   margin-left: 10px;
+overflow-x: hidden;
    padding: 10px;
    align-self: center;
   
@@ -35,13 +35,17 @@
          margin-bottom: 20px;
    }
    .education_details_link {
-         color: darkgrey;
-         margin-bottom: 15px;
-         font-size: 25px;
-      
-          span {
-               @include main_color;  
-          }
+          margin-bottom: 15px;
+          font-size: 20px;
+          overflow-wrap: break-word;
+       
+         :link
+         :active,
+         :visited,
+         :hover {
+                  color: rgba(6, 138, 94, 0.518);
+                }
+                
    }
  
 }
@@ -67,7 +71,6 @@
 
             .education_details_link {
                   font-size: 20px;
-                  width: 70%;
             }
-}
+      }
 }

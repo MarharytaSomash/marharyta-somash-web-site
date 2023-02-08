@@ -19,7 +19,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "components/about/SphereAbout.tsx"
+    "components/about/SphereAbout.tsx",
+    "**/*.mp3"
   ],
   "exclude": ["node_modules"]
   

@@ -1,4 +1,4 @@
-import '../styles/globals.scss';
+import '../styles/globals.scss'
 import Head from 'next/head';
 import Layout from '../components/Layout';
 import { useState, useEffect } from 'react';
@@ -29,7 +29,7 @@ function App({ Component, pageProps }):AppProps {
               </main>
             </Layout>
           }
-</>
+         </>
       // </Provider>
          
       )

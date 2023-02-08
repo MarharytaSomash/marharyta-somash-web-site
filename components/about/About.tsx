@@ -52,7 +52,7 @@ const About: FC = () => {
                </div>   
             <span className={styles.bottomTags}></span> 
            
-            </div>
+         </div>
             
      </> 
    )

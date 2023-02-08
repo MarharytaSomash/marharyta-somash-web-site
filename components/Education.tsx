@@ -43,40 +43,40 @@ const Education: FC = () => {
             </animated.h2>
                <h3 className={styles.education_title}> 2022-to present, Front End course at Ciclum </h3>
                <p className={styles.education_details_link}>
-                 <span>
+                 <div className={styles.link}>
                      <Link href={'#'}>
                         there will be link
                      </Link>
-               </span>
+               </div>
                </p>
                <h3 className={styles.education_title}> 2022, Front End Pro course at Hillel IT School: </h3>
                <p className={styles.education_details_link}>
-                  <span>
+                  <div className={styles.link}>
                         <Link href={'https://certificate.ithillel.ua/view/40371955'}>
                            https://certificate.ithillel.ua/view/40371955 
                         </Link>
-                  </span>
+                  </div>
                  
                </p>
             <h3 className={styles.education_title}> 2022, "Basics of Web UI Development 2022" at
              Lviv IT School: </h3>
             <p className={styles.education_details_link}>
-                  <span>
+                  <div className={styles.link}>
                            <Link href={'https://courses.prometheus.org.ua:18090/cert/d24db6542213405a9b5bbc8db70eb77d'}>
                            https://courses.prometheus.org.ua:18090/cert/d24db6542213405a9b5bbc8db70eb77d
                         </Link>
-                  </span>
+                  </div>
                  
             </p>
             <h3 className={styles.education_title}>
                2022 -to present, Green Forest English course - Upper-intermediate level.
             </h3> 
             <p className={styles.education_details_link}>
-               <span>
+               <div className={styles.link}>
                      <Link href={'#'}>
                         there will be link
                      </Link>
-               </span>
+               </div>
                  
                </p>
          </section>
