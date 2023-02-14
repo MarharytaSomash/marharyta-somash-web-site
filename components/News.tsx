@@ -8,7 +8,7 @@ const News:FC = () => {
 	return (
 
 		<div className={styles.currency}>
-			<Article/>
+			{/* <Article/> */}
 			{/* <CurrencyApp/>  */}
 		</div>
 		

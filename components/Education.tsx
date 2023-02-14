@@ -40,12 +40,27 @@ const Education: FC = () => {
                      }}
             >
                Additional education:
+            
             </animated.h2>
-               <h3 className={styles.education_title}> 2022-to present, Front End course at Ciclum </h3>
+
+               <h3 className={styles.education_title}>
+               2022 - to present, Green Forest English course:
+               <br></br>
+             
+               </h3> 
+               <p className={styles.education_details_link}>
+                  <div className={styles.link}>
+                     <Link href={'#'}>
+                       Upper-intermediate level (B2)
+                     </Link>
+                  </div>
+                 
+               </p>
+               <h3 className={styles.education_title}> 2022, Front End course at Ciclum </h3>
                <p className={styles.education_details_link}>
                  <div className={styles.link}>
-                     <Link href={'#'}>
-                        there will be link
+                     <Link href={'https://courses.prometheus.org.ua:18090/downloads/d616f03fb90a4b9e8d90d46273793cee/Certificate.pdf'}>
+                       https://courses.prometheus.org.ua:18090/downloads/d616f03fb90a4b9e8d90d46273793cee/Certificate.pdf
                      </Link>
                </div>
                </p>
@@ -68,17 +83,7 @@ const Education: FC = () => {
                   </div>
                  
             </p>
-            <h3 className={styles.education_title}>
-               2022 -to present, Green Forest English course - Upper-intermediate level.
-            </h3> 
-            <p className={styles.education_details_link}>
-               <div className={styles.link}>
-                     <Link href={'#'}>
-                        there will be link
-                     </Link>
-               </div>
-                 
-               </p>
+            
          </section>
       
       </div>

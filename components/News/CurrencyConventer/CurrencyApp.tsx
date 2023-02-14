@@ -3,7 +3,6 @@ import { useEffect, useState,FC} from 'react';
 import CurrencyInput from './CurrencyInput';
 import { useSpring, animated } from '@react-spring/web';
 
-
 function CurrencyApp(){
   const [amount1, setAmount1] = useState(100);
   const [amount2, setAmount2] = useState(1);
@@ -17,9 +16,10 @@ function CurrencyApp(){
         x: state ? 1 : 0,
         config: { duration: 1000 },
       })
-
-
+  
+  
   useEffect(() => {
+    
     let myHeaders = new Headers();
     myHeaders.append("apikey", "Z6pPDHL9tiDZ4Ixcij0jkqIdNws2QaQb");
  
@@ -33,6 +33,8 @@ function CurrencyApp(){
       .then(result => { setRates(result.rates) })
       .catch(error =>  setError(error))
   }, [])
+
+
 let date =  new Date().toLocaleDateString()
 
   useEffect(() => {

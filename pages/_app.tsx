@@ -3,13 +3,13 @@ import Head from 'next/head';
 import Layout from '../components/Layout';
 import { useState, useEffect } from 'react';
 import Loader from '../components/Loader';
-// import { Provider } from 'react-redux';
-// import { wrapper } from '../components/News/CurrencyConventer/redux/store';
+import { Provider } from 'react-redux';
 import { AppProps } from 'next/app';
-
+// import { store,wrapper } from '../redux/store';
+import store from '../store';
 
 function App({ Component, pageProps }):AppProps {
-  // const store = createStore(rootReducer);
+ 
   const [loading, setLoading] = useState(true)
   useEffect(() => {
     setTimeout(() => setLoading(false), 4000)
@@ -17,8 +17,9 @@ function App({ Component, pageProps }):AppProps {
  
   
       return (
-      // <Provider store={store}>
-         <>
+      
+          <>
+            <Provider store={store}>
           {loading ? <Loader/> :
            <Layout>
               <Head>
@@ -29,9 +30,9 @@ function App({ Component, pageProps }):AppProps {
               </main>
             </Layout>
           }
-         </>
-      // </Provider>
          
+       </Provider>
+         </>
       )
 }
 // export default wrapper.withRedux(App)

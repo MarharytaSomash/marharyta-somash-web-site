@@ -1,50 +1,43 @@
 import styles from '../../../styles/News/Article.module.scss';
-import { useEffect, useState } from 'react';
+import {useMemo, useState} from 'react';
 import Link from 'next/link';
-import { v4 as uuidv4 } from 'uuid';
+import { uuid } from 'uuidv4';
 
+import { useSelector,useDispatch } from 'react-redux';
+import { loadArticleAction } from '../../../store/actions/loadAction';
 
 function Article(): JSX.Element {
-	const [article, setArticle] = useState();
-	const [error, setError] = useState(null);
-  
-	useEffect(() => {
-
-		const dataFetch = async () => {
-	 
-			const article = await (
-				await fetch("https://newsdata.io/api/1/news?apikey=pub_15737250ae4abe462e94fb9715944723e5a06&language=en")
-					.then(response => response.json())
-					.then(res => setArticle(res.results))
-					.catch(error =>  setError(error))
-	)
- 	
-      
-	}
-
-    dataFetch();
-  }, []);
 	
-	let arr = Object.values({ article })
-	let newarr = arr[0]
+	const [error, setError] = useState(null);
+   const dispatch = useDispatch();
+   const articles = useSelector((state) => state);
+	
+	useMemo(() => {
+		dispatch(loadArticleAction());
+   }, [dispatch]);
+
+	let data = Object.values({articles })
+   let newdata = data[0]
+
+
 	if (error) {
 	return <div>Error: {error.message}</div>
 	} else {
 		return (
 			<>
-			   
+				
 				<div className={styles.news}>
 					<h1>Latest world news:</h1>
-					<ul>{newarr?.map(({ link, title, source_id}) =>
-						<li className={styles.link} key={source_id}>
+					<ul>{newdata?.articles.map(({ link, title, id }) =>
+						<li className={styles.link} key={uuid()}>
 									<Link href={link}> ○ {title} </Link>
 							</li>)}
-					</ul>
+					</ul> 
 			</div>
 			</>
 		 
     )
-}
+ }
 		
 
   
