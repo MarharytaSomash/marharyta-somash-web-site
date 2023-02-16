@@ -2,11 +2,13 @@ const LOAD_ARTICLE = "LOAD_ARTICLE";
 
 
 const defaultState = {
-    articles: []
+        articles: [],
+      
 }
 
-const rootReducer =(state=defaultState, {type,payload}) => {
-    switch(type) {
+const articleLoadReducer =(state=defaultState, {type,payload}) => {
+    
+    switch (type) {
         case LOAD_ARTICLE: {
             return {articles:payload}
         }
@@ -16,4 +18,4 @@ const rootReducer =(state=defaultState, {type,payload}) => {
         }
     }
 }
-export default rootReducer
+export default articleLoadReducer 

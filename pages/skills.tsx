@@ -4,7 +4,6 @@ import styles from '../styles/Skills.module.scss'
 const skills = () => {
    return (
    <Skills/>
-      
    )
 }
 

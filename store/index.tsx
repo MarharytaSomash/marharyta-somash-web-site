@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import rootReducer from "./reducers/articleLoadReducer"
+import reducers from "./reducers/rootReducer"
 
 export default configureStore({
-    reducer: rootReducer,
+    reducer: reducers,
     middleware: (getDefaultMiddleware) => getDefaultMiddleware() 
 })
 

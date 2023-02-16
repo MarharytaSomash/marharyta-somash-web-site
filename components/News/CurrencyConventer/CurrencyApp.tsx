@@ -1,5 +1,5 @@
 import styles from '../../../styles/News/Currency.module.scss';
-import { useEffect, useState,FC} from 'react';
+import { useState,FC, useMemo} from 'react';
 import CurrencyInput from './CurrencyInput';
 import { useSpring, animated } from '@react-spring/web';
 
@@ -18,7 +18,7 @@ function CurrencyApp(){
       })
   
   
-  useEffect(() => {
+  useMemo(() => {
     
     let myHeaders = new Headers();
     myHeaders.append("apikey", "Z6pPDHL9tiDZ4Ixcij0jkqIdNws2QaQb");
@@ -37,7 +37,7 @@ function CurrencyApp(){
 
 let date =  new Date().toLocaleDateString()
 
-  useEffect(() => {
+  useMemo(() => {
     if (!!rates) {
       handleAmount1Change(100)
     }
