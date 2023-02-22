@@ -2,58 +2,59 @@
 .sound svg {
    height: 20px;
    margin-right: 7px;
-   will-change: transform;
- 
+   position: relative;
+   
    path {
-      fill: #FD1056;
+      fill: aquamarine;
    }
 }
 
-   .button {
-
-     cursor: pointer;
-     color: #fd1073;
-     transition: none;
-     margin-left: 5px;
-     
+.button {
+      cursor: pointer;
+      color:aquamarine;
+      font-weight: 500;
+      margin-left: 90px;
+      z-index: 20;
+      width: 30px;
+      position: absolute;
+      background: #1d1d1d !important;
+      
 }
- 
- .buttonActivated :before {
-   cursor: pointer;
-   content: 'ON';
-   color: #08FDD8;
 
-}
 @media screen and (max-width: 600px) {
    .sound {
       font-size: 15px;
+      cursor: pointer;
    }
+       .button {
+          cursor: pointer;
+           z-index: 22;
+       }
 }
 
 @media screen and (max-width: 1300px) {
    .sound {
-   top: 1rem;
-   right: auto;
-   left: 10px;
-   font-size: 15px;
+      top: 1rem;
+      right: auto;
+      left: 10px;
+      font-size: 20px;
+      cursor: pointer;
+     
+   }
+   .button{
+      cursor: pointer !important;
+      font-size:20px;
+      z-index: 24;
    }
 }
+
 .sound {
    border-radius: 3px;
    padding: 5px;
    right: 20px;
    position: fixed;
-   z-index: 1;
    top: 15px;
-  
    display: flex;
    align-items: center;
-   color: #fff;
-   font-size: 16px;
-   pointer-events: none;
-   
+   font-size: 18px;
 }
-
-
-
-

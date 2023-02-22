@@ -1,13 +1,25 @@
 .sphereAbout {
        margin: 5px 20px 50px 5px;
        height: 500px !important;
-        width: 500px!important;;
+       width: 500px !important;
+       position: relative;
+       animation-name: rotate;
+       animation-duration: 30s;
+       animation-timing-function: linear;
+       animation-iteration-count: infinite;
+}
 
+@keyframes rotate {
+       from {
+              transform: rotate(330deg);
+       }
+
+       to {
+              transform: rotate(360deg);
+       }
 }
 @media screen and (max-width: 896px) {
        .sphereAbout {
               margin: 0px 100px 0px -120px;
-       
        }
-
 }

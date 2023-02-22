@@ -1,30 +1,32 @@
-import { FC } from 'react';
-import SoundSvg from '../../public/svg/sound';
+import { useState, useRef } from 'react';
 import styles from '../../styles/Sound.module.scss';
-import useSound from 'use-sound';
-import audio from '../../public/audio.mp3'
-// declare module '*.mp3' {
-//   const content: string
-//   export default content
-// }
-const Sound: FC = () => {
-   
-   // const [playSound] = useSound('../../public/audio.mp3')
-     const [playSound] = useSound(audio)
+import SoundSvg from '../../public/svg/sound';
 
-   return (
-      <div className={styles.sound}>
+const Sound = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  const handleClick = () => {
+    const audio = audioRef.current;
+    if (!isPlaying) {
+      audio?.play();
+      setIsPlaying(true);
+    } else {
+      audio?.pause();
+      setIsPlaying(false);
+    }
+  };
+
+  return (
+      <div className={styles.sound}>  
           <SoundSvg/>
           <span>Sound</span>
-         <button className={styles.button} onClick={() =>{playSound}} > OFF </button> 
-        
-     </div> 
+          <audio ref={audioRef} src="/audio.mp3" />
+          <button className={styles.button} onClick={handleClick}>
+              {isPlaying ? 'OFF' : 'ON'}
+          </button>
+    </div>
+  );
+};
 
-        
-   )
-   
-}
-
-export default Sound;
-
-
+export default Sound

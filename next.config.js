@@ -6,7 +6,7 @@ const nextConfig = {
   }
 
 
-module.exports = nextConfig
+// module.exports = nextConfig
 // module.exports = compose([
 //   [nextConfig],
 //   {
@@ -22,3 +22,18 @@ module.exports = nextConfig
 //   },
 // ]);
 
+module.exports = {
+  module: {
+    nextConfig,
+    rules: [
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
+    ],
+  },
+};

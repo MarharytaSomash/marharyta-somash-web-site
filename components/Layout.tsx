@@ -13,8 +13,8 @@ const Layout = ({ children }: any) => {
          <div className={styles.wrap_layout}>
             <Sound />
             <Navbar />
-            {toggle&&<MobileMenu />} 
-            <BurgersMenu />
+            {/* {toggle&&<MobileMenu />}  */}
+            {/* <BurgersMenu /> */}
             {children}   
          </div>
           )
