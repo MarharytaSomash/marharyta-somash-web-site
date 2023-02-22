@@ -4,17 +4,18 @@ import { showMenuBurger } from "../store/actions/showMenuBurger";
 import { useDispatch,useSelector } from "react-redux";
 
 
-const BurgersMenu = () => {
+const BurgersMenu = ({toggle}) => {
 
    const dispatch = useDispatch();
-   const toggle = useSelector((state) => state.toggle);
-    console.log(toggle)
+   // const toggle = useSelector((state) => state.toggle);
+     console.log(toggle)
   
    return (
     
-      <button onClick={() => dispatch(showMenuBurger())} >
+      <button onClick={ ()=>dispatch(showMenuBurger(toggle))} >
          {toggle ? <CloseSvg /> : <BurgerSvg /> }  
       </button>
    )
  }
 export default BurgersMenu
+
