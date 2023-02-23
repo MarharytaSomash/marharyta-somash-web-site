@@ -1,6 +1,9 @@
 const TOGGLE_MENU = "TOGGLE_MENU"
+export interface ShowMenuState {
+  toggle: boolean;
+}
 
-const defaultState = {
+const defaultState:ShowMenuState = {
         toggle: false
 }
 

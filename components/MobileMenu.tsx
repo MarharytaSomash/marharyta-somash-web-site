@@ -3,11 +3,12 @@ import { useRouter } from 'next/router';
 import styles from '../styles/MobileMenu.module.scss';
 import { navigation } from './constants/default_data';
 import Image from 'next/image';
-import { FC} from 'react';
+import { FC } from 'react';
+
 
 const MobileMenu:FC = () => {
       const { pathname } = useRouter();
-      
+
       return (
       <div>
           
@@ -26,7 +27,7 @@ const MobileMenu:FC = () => {
                         <span>
                               {navigation.map(({ id, title, path }) => (       
                                     <Link key={id} href={ path }
-                                    className={pathname === path ? styles.active : styles.default}> {title}
+                                    className={pathname === path ? styles.active : styles.default} > {title}
                                     </Link>
                               ))}
                         </span>
