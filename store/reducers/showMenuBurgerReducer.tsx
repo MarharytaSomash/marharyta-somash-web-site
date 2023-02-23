@@ -8,16 +8,16 @@ const defaultState:ShowMenuState = {
 }
 
 const showMenuReducer = (state = defaultState, { type,payload}) => {
-    // console.log({ payload })
+    
     switch (type) {
         
         case TOGGLE_MENU: {
             return {
                 ...state,
-                toggle:!payload
-               
+                toggle:!payload 
             }
         }
+            
         default: {
             return state
         }

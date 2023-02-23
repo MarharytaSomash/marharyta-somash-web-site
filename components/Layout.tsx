@@ -6,17 +6,15 @@ import MobileMenu from "./MobileMenu";
 import { useSelector} from "react-redux";
 
 const Layout = ({ children }: any) => {
-   
    const toggle = useSelector((state) =>state.toggle.toggle);
-    console.log({ toggle })
+  
    return (
          <div className={styles.wrap_layout}>
-            <Sound />
-            <Navbar />
-          
-         <BurgersMenu toggle={toggle} />
-         {toggle? <MobileMenu /> : null}
-            {children}   
+               <Sound />
+               <Navbar />
+               <BurgersMenu toggle={ toggle} />
+               {toggle ? <MobileMenu  /> : null}
+               {children}   
          </div>
           )
    }

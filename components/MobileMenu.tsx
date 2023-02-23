@@ -4,14 +4,16 @@ import styles from '../styles/MobileMenu.module.scss';
 import { navigation } from './constants/default_data';
 import Image from 'next/image';
 import { FC } from 'react';
+import { useSelector } from 'react-redux';
+import CloseSvg from '../public/svg/close';
+import BurgerSvg from '../public/svg/hamburger_menu';
 
 
 const MobileMenu:FC = () => {
       const { pathname } = useRouter();
-
+      // const toggle = useSelector((state: RootState) => state.toggle.toggle);
       return (
       <div>
-          
           <menu className={styles.some_menu} /> 
                   <div className={styles.some_menu_top} >
                         <div className={styles.logo}>

@@ -9,7 +9,7 @@ const News:FC = () => {
 
 		<div className={styles.currency}>
 			   <Article/>  
-			  {/* <CurrencyApp/>   */} 
+			  <CurrencyApp/>
 		</div>
 		
 	)

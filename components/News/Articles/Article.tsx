@@ -10,7 +10,7 @@ function Article(): JSX.Element {
 	const [error, setError] = useState(null);
    const dispatch = useDispatch();
    const articles = useSelector((state) => state);
-	// console.log(articles.article.articles)
+
 	useMemo(() => {
 		dispatch(loadArticleAction());
    }, [dispatch]);
@@ -18,7 +18,6 @@ function Article(): JSX.Element {
 	let data = Object.values({articles })
    let newdata = data[0].article.articles
 
-// console.log( newdata )
 
 	if (error) {
 	return <div>Error: {error.message}</div>
