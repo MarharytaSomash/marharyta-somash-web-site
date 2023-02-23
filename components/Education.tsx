@@ -56,7 +56,7 @@ const Education: FC = () => {
                   </p>
                  
                </div>
-               <h3 className={styles.education_title}> 2022, Front End course at Ciclum </h3>
+               <h3 className={styles.education_title}> 2023, Front End course at Ciclum </h3>
                <div className={styles.education_details_link}>
                  <p className={styles.link}>
                      <Link href={'https://courses.prometheus.org.ua:18090/downloads/d616f03fb90a4b9e8d90d46273793cee/Certificate.pdf'}>

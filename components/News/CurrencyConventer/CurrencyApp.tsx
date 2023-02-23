@@ -3,7 +3,9 @@ import { useState,FC, useMemo} from 'react';
 import CurrencyInput from './CurrencyInput';
 import { useSpring, animated } from '@react-spring/web';
 
-function CurrencyApp(){
+
+function CurrencyApp() {
+
   const [amount1, setAmount1] = useState(100);
   const [amount2, setAmount2] = useState(1);
   const [currency1, setCurrency1] = useState('USD');
@@ -21,7 +23,7 @@ function CurrencyApp(){
   useMemo(() => {
     
     let myHeaders = new Headers();
-    myHeaders.append("apikey", "Z6pPDHL9tiDZ4Ixcij0jkqIdNws2QaQb");
+    myHeaders.append("apikey", "ghxogMS4pfax0xRmJCXjIH4c0QoxTITb");
  
     let requestOptions = {
       method: 'GET',

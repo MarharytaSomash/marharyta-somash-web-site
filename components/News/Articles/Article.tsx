@@ -1,12 +1,12 @@
 import styles from '../../../styles/News/Article.module.scss';
 import {useMemo, useState} from 'react';
 import Link from 'next/link';
-import { uuid } from 'uuidv4';
+import { v4 as uuidv4 } from 'uuid';
 import { useSelector,useDispatch } from 'react-redux';
 import { loadArticleAction } from '../../../store/actions/loadAction';
 
 function Article(): JSX.Element {
-	
+	const myUUID = uuidv4();
 	const [error, setError] = useState(null);
    const dispatch = useDispatch();
    const articles = useSelector((state) => state);
@@ -27,8 +27,8 @@ function Article(): JSX.Element {
 				
 				<div className={styles.news}>
 					<h1>Latest world news:</h1>
-					<ul>{newdata?.map(({ link, title, id }) =>
-						<li className={styles.link} key={uuid()}>
+					<ul>{newdata?.map(({ link, title, key}) =>
+						<li className={styles.link} key={myUUID}>
 									<Link href={link}> ○ {title} </Link>
 							</li>)}
 					</ul> 
