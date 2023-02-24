@@ -12,6 +12,7 @@ import ScrollDown from '../components/ScrollDown';
 export default function HomePage() {
   return (
     <>
+      <link rel="icon" href="/favicon.ico" />
       <div className={styles.wrapper}>
               <About />
               <ScrollDown/>

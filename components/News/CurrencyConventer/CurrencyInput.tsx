@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 function CurrencyInput ( props:any) {
    const { amount, currency, currencies, onAmountChange, onCurrencyChange } = props;
-   const myUUID = uuidv4();
+   // const myUUID = uuidv4();
    return (
       <div className={styles.group}>
         
@@ -18,7 +18,7 @@ function CurrencyInput ( props:any) {
             onChange={e => onCurrencyChange(e.target.value)}>
            
                {currencies.map((currency:string) => (
-                  <option value={currency} key={myUUID}> {currency}</option>
+                  <option value={currency} key={uuidv4()}> {currency}</option>
                   
                ))}
          </select>

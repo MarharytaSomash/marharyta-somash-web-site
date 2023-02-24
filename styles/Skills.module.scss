@@ -1,5 +1,5 @@
 @mixin effect {
-   font-family: 'La Belle Aurore', cursive;
+   // font-family: 'La Belle Aurore', cursive;
    color: #515152;
    font-size: 18px;
    position: absolute;
@@ -56,9 +56,10 @@
             width: 100%;
            div{
             margin-bottom: 25px;
-            a{
-               color: aquamarine;
-            }
+               a{
+                  color: aquamarine;
+                  padding:5px
+               }
            } 
 
       }

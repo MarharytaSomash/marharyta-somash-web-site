@@ -6,7 +6,6 @@ import { useSelector,useDispatch } from 'react-redux';
 import { loadArticleAction } from '../../../store/actions/loadAction';
 
 function Article(): JSX.Element {
-	const myUUID = uuidv4();
 	const [error, setError] = useState(null);
    const dispatch = useDispatch();
    const articles = useSelector((state) => state);
@@ -28,7 +27,7 @@ function Article(): JSX.Element {
 				<div className={styles.news}>
 					<h1>Latest world news:</h1>
 					<ul>{newdata?.map(({ link, title, key}) =>
-						<li className={styles.link} key={myUUID}>
+						<li className={styles.link} key={uuidv4()}>
 									<Link href={link}> ○ {title} </Link>
 							</li>)}
 					</ul> 
