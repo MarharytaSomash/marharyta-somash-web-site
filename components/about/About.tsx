@@ -35,14 +35,16 @@ const About: FC = () => {
                   I’m a Front-End Developer located in Kyiv.
                </p>
                <p className={styles.about_details}>
-                  I describe myself as a person people with strategic thinking, purposeful, who always develops.
+                  I have experience in creating websites using various technologies, including React,Next JS, Redux, and TypeScript. 
                 </p>
                 
                <p className={styles.about_details}>
-                  I do not have commercial experience in creating websites,
-                  and  I successfully graduated  several IT Courses and continue to improve my English.
+                  Although my experience is non-commercial, i can still highlight any personal projects or self-directed learning you have undertaken to showcase your skills and expertise. I can also mention any specific challenges you faced and how you overcame them, as well as any notable achievements or contributions i made to your projects. 
                </p>
                
+               <p className={styles.about_details}>
+                  Additionally, i can emphasize my eagerness to continue learning and growing as a Junior Front End Developer, and my willingness to collaborate and contribute to a team environment.
+               </p>
               <div className={styles.about_details_link}>
                    <span>
                            <Link href={'https://t.me/MarharytaSomash'}>
