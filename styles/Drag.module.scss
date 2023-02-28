@@ -1,51 +1,51 @@
-.hooksMain>div {
-   position: absolute;
-   will-change: transform;
-   border-radius: 60%;
-   background:linear-gradient(90deg, rgb(2, 62, 54) 0%, rgb(21, 162, 138) 35%, rgba(0, 212, 255, 1) 100%);
-   opacity: 0.6;
-   
+.hooksMain > div {
+    position: absolute;
+    will-change: transform;
+    border-radius: 60%;
+    background: linear-gradient(
+        90deg,
+        rgb(2, 62, 54) 0%,
+        rgb(21, 162, 138) 35%,
+        rgba(0, 212, 255, 1) 100%
+    );
+    opacity: 0.6;
 }
 
-.hooksMain>div {
-   width: 10px;
-   height: 10px;
+.hooksMain > div {
+    width: 10px;
+    height: 10px;
 }
 
-.hooksMain>div:nth-child(2) {
-   width: 20px;
-   height: 20px;
+.hooksMain > div:nth-child(2) {
+    width: 20px;
+    height: 20px;
 }
 
-.hooksMain>div:nth-child(3) {
-   width: 20px;
-   height: 20px;
+.hooksMain > div:nth-child(3) {
+    width: 20px;
+    height: 20px;
 }
-
 
 .hooksMain {
-   position: absolute;
-   width: 70%;
-   height: 100%;
-   filter: url('#goo');
-   overflow: hidden;
-   background: transparent;
-   -webkit-touch-callout: none;
-   -webkit-user-select: none;
-   -khtml-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
-   cursor: default;
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    filter: url("#goo");
+    overflow: hidden;
+    background: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
 }
-
 
 .trail {
-
-   position: absolute;
-   height: 6px;
-   width: 6px;
-   border-radius: 3px;
-   background: teal;
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    border-radius: 3px;
+    background: teal;
 }
-

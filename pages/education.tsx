@@ -1,11 +1,7 @@
-import Education from '../components/Education';
-import styles from '../styles/Education.module.scss'
+import Education from "../components/Education";
 
 const education = () => {
-   return (
-   <Education/>
-      
-   )
-}
+    return <Education />;
+};
 
 export default education;

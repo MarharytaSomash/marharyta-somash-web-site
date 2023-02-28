@@ -1,3 +1,84 @@
+// {
+//     "env": {
+//         "browser": true,
+//         "es2021": true
+//     },
+//     "extends": [
+//         "eslint:recommended",
+//         "plugin:react/recommended",
+//         "plugin:@typescript-eslint/recommended"
+//     ],
+//     "overrides": [
+//     ],
+//     "parser": "@typescript-eslint/parser",
+//     "parserOptions": {
+//         "ecmaVersion": "latest",
+//         "sourceType": "module"
+//     },
+//     "plugins": [
+//         "react",
+//         "@typescript-eslint"
+//     ],
+//     "rules": {
+//         "semi": ["error", "always"],
+//         "quotes": ["error", "double"]
+//     }
+// }
+
+
+
 {
-  "extends": "next/core-web-vitals"
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "react-hooks",
+    "prettier",
+    "import"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest/globals": true,
+    "node": true
+  },
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal"],
+        "newlines-between": "always"
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "none",
+        "tabWidth": 4,
+        "semi": true,
+        "singleQuote": true,
+        "printWidth": 120,
+        "arrowParens": "avoid",
+        "jsxBracketSameLine": true,
+        "useTabs": false
+      }
+    ]
+  }
 }

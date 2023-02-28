@@ -1,11 +1,7 @@
-import Contact from '../components/Contact/Contact';
-import styles from '../styles/Contact.module.scss'
+import Contact from "../components/Contact/Contact";
 
 const contact = () => {
-   return (
-   <Contact/>
-      
-   )
-}
+    return <Contact />;
+};
 
 export default contact;

@@ -1,53 +1,51 @@
 .scroll_down {
-   position: absolute;
-   right: 30px;
-   bottom: 6rem;
-   justify-content: center;
-   transform: rotate(90deg);
-   display: block;
-   font-size: 14px;
+    position: absolute;
+    right: 30px;
+    bottom: 6rem;
+    justify-content: center;
+    transform: rotate(90deg);
+    display: block;
+    font-size: 14px;
 }
 
 .scroll_down_scroll_down__left {
-   position: absolute;
-   bottom: 6rem;
-   transform: rotate(90deg);
-   display: block;
-   font-size: 14px;
-   left: 170px;
-   right: auto;
+    position: absolute;
+    bottom: 6rem;
+    transform: rotate(90deg);
+    display: block;
+    font-size: 14px;
+    left: 170px;
+    right: auto;
 }
 
 .scroll_down span {
-   display: inline-block;
-   animation: scroll 0.5s linear infinite alternate-reverse;
+    display: inline-block;
+    animation: scroll 0.5s linear infinite alternate-reverse;
 }
 
 .scroll_down_scroll_down__left span {
-   display: inline-block;
-   animation: scroll 0.5s linear infinite alternate-reverse;
+    display: inline-block;
+    animation: scroll 0.5s linear infinite alternate-reverse;
 }
 
 @keyframes scroll {
-   0% {
-      transform: translateX(-7px);
-   }
+    0% {
+        transform: translateX(-7px);
+    }
 
-   100% {
-      transform: translateX(7px);
-   }
+    100% {
+        transform: translateX(7px);
+    }
 }
 
 @media screen and (max-width: 896px) {
-   .scroll_down_scroll_down__left {
-      left: 50px;
-      bottom: 4rem;
+    .scroll_down_scroll_down__left {
+        left: 150px;
+        bottom: 4rem;
+    }
 
-   }
-
-   .scroll_down {
-      right: -500px;
-      bottom: 4rem;
-   }
+    .scroll_down {
+        right: -650px;
+        bottom: 4rem;
+    }
 }
-

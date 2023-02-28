@@ -1,9 +1,20 @@
-import styles from '../../styles/Sound.module.scss';
+import styles from "../../styles/Sound.module.scss";
 
 const SoundSvg = () => {
-  return (
-   <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="soundcloud" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" className="svg-inline--fa fa-soundcloud fa-w-20 fa-5x">
-      <path fill="currentColor" d="M111.4 256.3l5.8 65-5.8 68.3c-.3 2.5-2.2 4.4-4.4 4.4s-4.2-1.9-4.2-4.4l-5.6-68.3 5.6-65c0-2.2 1.9-4.2 
+    return (
+        <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fab"
+            data-icon="soundcloud"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 512"
+            className="svg-inline--fa fa-soundcloud fa-w-20 fa-5x"
+        >
+            <path
+                fill="currentColor"
+                d="M111.4 256.3l5.8 65-5.8 68.3c-.3 2.5-2.2 4.4-4.4 4.4s-4.2-1.9-4.2-4.4l-5.6-68.3 5.6-65c0-2.2 1.9-4.2 
                                    4.2-4.2 2.2 0 4.1 2 4.4 4.2zm21.4-45.6c-2.8 0-4.7 2.2-5 5l-5 105.6 5 68.3c.3 2.8 2.2 5 5 5 2.5 0
                                    4.7-2.2 4.7-5l5.8-68.3-5.8-105.6c0-2.8-2.2-5-4.7-5zm25.5-24.1c-3.1 0-5.3 2.2-5.6 5.3l-4.4 130 4.4 
                                    67.8c.3 3.1 2.5 5.3 5.6 5.3 2.8 0 5.3-2.2 5.3-5.3l5.3-67.8-5.3-130c0-3.1-2.5-5.3-5.3-5.3zM7.2 
@@ -18,13 +29,10 @@ const SoundSvg = () => {
                                    78.6-78.3.1-43.6-35.2-78.9-78.5-78.9zm-296.7-60.3c-4.2 0-7.5 3.3-7.8 7.8l-3.3 136.7 3.3 65.6c.3 4.2 3.6 7.5 7.8 7.5 4.2 0 7.5-3.3 7.5-7.5l3.9-65.6-3.9-136.7c-.3-4.5-3.3-7.8-7.5-7.8zm-53.6-7.8c-3.3 
                                    0-6.4 3.1-6.4 6.7l-3.9 145.3 3.9 66.9c.3 3.6 3.1 6.4 6.4 6.4 3.6 0 6.4-2.8 6.7-6.4l4.4-66.9-4.4-145.3c-.3-3.6-3.1-6.7-6.7-6.7zm26.7 3.4c-3.9 0-6.9 3.1-6.9 6.9L227 
                                    321.3l3.9 66.4c.3 3.9 3.1 6.9 6.9 6.9s6.9-3.1 6.9-6.9l4.2-66.4-4.2-141.7c0-3.9-3-6.9-6.9-6.9z"
-               className=""
-               >
-             </path>
-         </svg>
-          )
-}
+                className=""
+            ></path>
+        </svg>
+    );
+};
 
-export default SoundSvg 
-
-
+export default SoundSvg;

@@ -1,76 +1,65 @@
 @mixin main_color {
-      color: aquamarine;
+    color: aquamarine;
 }
 
-.about_education{
-   margin-left: 10px;
-   overflow-x: hidden;
-   padding: 10px;
-   align-self: center;
-   font-family: "Open Sans", sans-serif;
-  
-   h1{
-      @include main_color;
-      font-weight: 800;
-      font-size: 60px;
-      margin: 10px;
-   } 
-   h2{
-         @include main_color;
-         font-weight: 500;
-         font-size: 50px;
-         margin: 10px;
-   }
-   h3{
-         color: whitesmoke;
-         font-weight: 400;
-         font-size: 30px;
-         margin: 10px;
-   }  
-   .education_details{
-         color: darkgrey;
-         font-family: "Open Sans", sans-serif;
-         font-size: 24px;
-         line-height: 25px;
-         margin-bottom: 20px;
-   }
-   .education_details_link {
-          margin-bottom: 15px;
-          font-size: 20px;
-          overflow-wrap: break-word;
-       
-         :link
-         :active,
-         :visited,
-         :hover {
-                  color: rgba(6, 138, 94, 0.518);
-                }
-                
-   }
- 
+.about_education {
+    margin-left: 10px;
+    overflow-x: hidden;
+    padding: 5px;
+    font-family: "Open Sans", sans-serif;
+
+    h1,
+    h2 {
+        @include main_color;
+        font-weight: 600;
+        font-size: 60px;
+        margin: 6px;
+    }
+
+    h3 {
+        color: whitesmoke;
+        font-weight: 400;
+        font-size: 27px;
+        margin: 5px;
+    }
+    .education_details {
+        color: darkgrey;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 16px;
+    }
+    .education_details_link {
+        margin-bottom: 15px;
+        font-size: 20px;
+        overflow-wrap: break-word;
+
+        :link :active,
+        :visited,
+        :hover {
+            color: rgba(6, 138, 94, 0.518);
+        }
+    }
 }
 @media screen and (max-width: 896px) {
-      .about_education {
-             width:70%;
-             margin: 50px 100px 0px -120px;
-            h1 {
-                  font-weight: 600;
-                  font-size: 40px;
-            }
+    .about_education {
+        width: 70%;
+        margin: 50px 100px 0px -120px;
+        h1,
+        h2 {
+            font-weight: 600;
+            font-size: 40px;
+        }
 
-            h2 {
-                  font-weight: 500;
-                  font-size: 30px;
-            }
+        h3 {
+            margin-top: 20px;
+            line-height: 20px;
+            font-weight: 400;
+            font-size: 20px;
+        }
 
-            h3 {
-                  font-weight: 400;
-                  font-size: 20px;
-            }
-
-
-            .education_details_link {
-                  font-size: 20px;
-            }
-      }
+        .education_details_link {
+            font-size: 20px;
+        }
+    }
 }

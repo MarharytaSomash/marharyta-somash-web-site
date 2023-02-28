@@ -1,70 +1,72 @@
-@mixin form_input{
-      padding: 10px;
-      margin-left: 10px;
-      margin-bottom: 20px;
-      height: 60px;
-      font-size: 20px;
-      background-color: rgba(77, 76, 76, 0.649);
+@mixin form_input {
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    height: 60px;
+    font-size: 20px;
+    background-color: rgba(77, 76, 76, 0.649);
 }
 @mixin effect {
-   font-family: 'La Belle Aurore', cursive;
-   color: #515152;
-   font-size: 18px;
-   position: absolute;
+    font-family: "La Belle Aurore", cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
 }
 
 .topTags:before {
-   @include effect;
-   content: '<form>';
-   margin-left: 0.5rem;
-   margin-top: -3rem;
+    @include effect;
+    content: "<form>";
+    margin-left: 0.5rem;
+    margin-top: -3rem;
 }
-.form{
-      width: 100%;
-      color: white;
-      margin-top: 50px;
-   
-      input[id=name],input[id=email]{
-            color: darkgray;
-            @include form_input;
-            width: 80%;
-   }
-      input[id=subject],textarea[id=message] {
-            display: flex;
-            flex-direction: column;
-            @include form_input;
-            width: 80%;
-            }
+.form {
+    width: 100%;
+    color: white;
+    margin-top: 50px;
 
-      input[id=message]{
-         height: 120px;
-      }
+    input[id="name"],
+    input[id="email"] {
+        color: darkgray;
+        @include form_input;
+        width: 80%;
+    }
+    input[id="subject"],
+    textarea[id="message"] {
+        display: flex;
+        flex-direction: column;
+        @include form_input;
+        width: 80%;
+    }
 
-   button {
-      align-self: center;
-      align-items: center;
-      height: 70px;
-      font-size: 23px;
-      background: #1d1d1d;
-      color: #08fdd8;
-      border: 1px solid #08fdd8;
-      padding: 20px;
-      width: 250px;
-      margin: 20px 100px 0px 227px;
-     
-         &:hover {
+    input[id="message"] {
+        height: 120px;
+    }
+
+    button {
+        align-self: center;
+        align-items: center;
+        height: 70px;
+        font-size: 23px;
+        background: #1d1d1d;
+        color: #08fdd8;
+        border: 1px solid #08fdd8;
+        padding: 20px;
+        width: 250px;
+        margin: 20px 100px 0px 227px;
+
+        &:hover {
             background-color: #08fdd8;
-            color:#1d1d1d
-         }
-         &.active{
-               background-color: blue;
-            }
-   }
-   
-      .bottomTags:before {
-         @include effect;
-         content: '</form>';
-         margin-left: 0.7rem;
-         margin-top: 1rem;
-      }
+            color: #1d1d1d;
+        }
+        &.active {
+            background-color: blue;
+        }
+    }
+
+    .bottomTags:before {
+        @include effect;
+        content: "</form>";
+        margin-left: 0.7rem;
+        margin-top: 1rem;
+    }
 }

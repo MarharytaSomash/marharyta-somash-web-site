@@ -1,140 +1,129 @@
 @mixin main_color {
-   color: aquamarine;
+    color: aquamarine;
 }
 
 @mixin effect {
-      font-family: 'La Belle Aurore', cursive;
-      color: #515152;
-      font-size: 18px;
-      position: absolute;
+    font-family: "La Belle Aurore", cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
 }
 .topTags:before {
-   @include effect;
-   content: '<body>';
-   margin-left: 0.3rem;
-   margin-top: -2.5rem;
+    @include effect;
+    content: "<body>";
+    margin-left: 0.3rem;
+    margin-top: -2.5rem;
 }
-.aboutModule{
-   display: flex;
-   flex-direction: row;
-    margin-top: 10px; 
-    
+.aboutModule {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
 }
 .about {
-   
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   margin: 20px 0px 0px 20px;
-   overflow-wrap: break-word;
-   width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0px 0px 20px;
+    overflow-wrap: break-word;
+    width: 80%;
 
+    .about_title {
+        @include main_color;
+        font-weight: 600;
+        font-size: 60px;
+        margin: 10px;
+    }
 
-   .about_title {
-      @include main_color;
-      font-weight: 800;
-      font-size: 60px;
-      margin: 10px;
-     
-   }
-    
-      .about_title:before{
-         @include effect;
-         content: '<h2>';
-         font-size: 16px;
-         margin-left: 0.5rem;
-         margin-top: -1rem;
-      
-      }
-      .about_title:after {
-         @include effect;
-          content: '</h2>';
-          font-size: 16px;
-          margin-left: -29rem;
-          margin-top: 5.5rem;
-      }
+    .about_title:before {
+        @include effect;
+        content: "<h2>";
+        font-size: 16px;
+        margin-left: 0.5rem;
+        margin-top: -1rem;
+    }
+    .about_title:after {
+        @include effect;
+        content: "</h2>";
+        font-size: 16px;
+        margin-left: -29rem;
+        margin-top: 5.5rem;
+    }
 
-      p:before {
-          @include effect;
-          content: '<p>';
-          font-size: 12px;
-          margin-left: 1.2rem;
-          margin-top: -1.3rem;
-      }
-            p:after {
-               @include effect;
-               content: '</p>';
-               font-size: 12px;
-               margin-left: 2rem;
-               margin-top: 1.5rem;
-            }
-      .about_details {
+    p:before {
+        @include effect;
+        content: "<p>";
+        font-size: 12px;
+        margin-left: 1.2rem;
+        margin-top: -1.3rem;
+    }
+    p:after {
+        @include effect;
+        content: "</p>";
+        font-size: 12px;
+        margin-left: 2rem;
+        margin-top: 1.5rem;
+    }
+    .about_details {
         color: azure;
         width: 100%;
-        font-size: 35x;
+        font-size: 20px;
         line-height: 35px;
-        margin-bottom: 25px;
-        margin-top: 10px;
-        align-self:flex-start;
-      }
-      .about_details_link{
-       font-size: 30px;
-      }
-         span{
-         @include main_color;
-         }
-
+        margin-bottom: 15px;
+        margin-top: 5px;
+        align-self: flex-start;
+    }
+    .about_details_link {
+        font-size: 30px;
+    }
+    span {
+        @include main_color;
+    }
 }
-.bottomTags:before{
-   @include effect;
-   content: '</body>';
-   margin-left: 0.7rem;
-   margin-top: 2rem;
+.bottomTags:before {
+    @include effect;
+    content: "</body>";
+    margin-left: 0.7rem;
+    margin-top: 2rem;
 }
 
 @media screen and (max-width: 896px) {
-   .aboutModule {
-         display: flex;
-         flex-direction: column;
-      }
+    .aboutModule {
+        display: flex;
+        flex-direction: column;
+    }
 
-      .about{
-        margin:30px 100px 0px -120px; 
-      }
+    .about {
+        margin: 30px 100px 0px -120px;
+    }
 
-             .about_title {
-                @include main_color;
-                font-weight: 500;
-                font-size: 20px;
-                margin: 10px;
-             }
-      
-             .about_details {
-                color: azure;
-                width: 100%;
-                font-size: 15px;
-                line-height: 30px;
-                margin-bottom: 25px;
-                margin-right: 10px;
-               
-             }
-      
-             .about_details_link {
-                font-size: 20px;
-             }
-      
-            
-       .about_title:after {
-          margin-left: 2rem;
-          margin-top: 5.5rem;
-         }
+    .about_title {
+        @include main_color;
+        font-weight: 500;
+        margin: 10px;
+    }
 
-       .bottomTags:before {
-          @include effect;
-          content: '</body>';
-          margin-left: 0.8rem;
-         margin-top: 9rem;
-        }
+    .about_details {
+        color: azure;
+        width: 100%;
+        font-size: 15px;
+        line-height: 30px;
+        margin-bottom: 25px;
+        margin-right: 10px;
+    }
+
+    .about_details_link {
+        font-size: 20px;
+    }
+
+    .about_title:after {
+        margin-left: 2rem;
+        margin-top: 5.5rem;
+    }
+
+    .bottomTags:before {
+        @include effect;
+        content: "</body>";
+        margin-left: 0.8rem;
+        margin-top: 9rem;
+    }
 }
-
-

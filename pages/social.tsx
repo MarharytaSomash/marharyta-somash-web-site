@@ -1,11 +1,7 @@
-import Social from '../components/Social/Social';
-import styles from '../styles/Social.module.scss'
+import Social from "../components/Social/Social";
 
-const social= () => {
-   return (
-   <Social/>
-      
-   )
-}
+const social = () => {
+    return <Social />;
+};
 
 export default social;

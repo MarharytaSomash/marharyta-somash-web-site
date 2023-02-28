@@ -1,66 +1,61 @@
 @mixin effect {
-     font-family: 'La Belle Aurore', cursive;
-     color: #515152;
-     font-size: 18px;
-     position: absolute;
+    font-family: "La Belle Aurore", cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
 }
 
 .topTags:before {
-     @include effect;
-     content: '<body>';
-     margin-left: 0.3rem;
-     margin-top: -1.5rem;
+    @include effect;
+    content: "<body>";
+    margin-left: 0.3rem;
+    margin-top: -1.5rem;
 }
 
-.contact{
-     margin: 40px 0px 0px 20px;
-     display: flex;
-     flex-direction: column;
-     
+.contact {
+    margin: 40px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
 }
-    
-  .contact_details {
-            display: flex;
-            flex-direction: column;
-   h1{
-      color: aquamarine;
-      font-weight: 600;
-      font-size: 55px;
-      margin-left: 10px;
+
+.contact_details {
+    display: flex;
+    flex-direction: column;
+    h1 {
+        color: aquamarine;
+        font-weight: 600;
+        font-size: 60px;
+        margin-left: 10px;
     }
 
     p {
-         color: azure;
+        color: azure;
         max-width: 95%;
-         font-size: 23px;
-         line-height: 30px;
-         padding: 10px;
-         align-self: flex-start;
-        
+        font-size: 23px;
+        line-height: 30px;
+        padding: 10px;
+        align-self: flex-start;
     }
 }
 
 .bottomTags:before {
-     @include effect;
-     content: '</body>';
-     margin-left: 0.7rem;
-     margin-top: 13rem;
+    @include effect;
+    content: "</body>";
+    margin-left: 0.7rem;
+    margin-top: 13rem;
 }
 
 @media screen and (max-width: 896px) {
-  .contact {
-     display: flex;
-     flex-direction: column;
-     margin: 50px 100px 0px -120px;
-   }
-   
+    .contact {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 100px 0px -120px;
+    }
 
-.bottomTags:before {
-     @include effect;
-     content: '</body>';
-     margin-left: 0.7rem;
-     margin-top: 64rem;
-  }
-
+    .bottomTags:before {
+        @include effect;
+        content: "</body>";
+        margin-left: 0.7rem;
+        margin-top: 64rem;
+    }
 }
- 

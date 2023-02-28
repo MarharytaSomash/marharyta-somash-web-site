@@ -1,10 +1,7 @@
-import Skills from '../components/Skills';
-import styles from '../styles/Skills.module.scss'
+import Skills from "../components/Skills";
 
 const skills = () => {
-   return (
-   <Skills/>
-   )
-}
+    return <Skills />;
+};
 
-export default skills
+export default skills;

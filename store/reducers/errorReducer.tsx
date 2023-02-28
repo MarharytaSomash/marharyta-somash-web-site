@@ -1,21 +1,18 @@
 const LOAD_ARTICLE_ERROR = "LOAD_ARTICLE_ERROR";
 
-
 const defaultState = {
-        error: null,
-      
-}
+    error: null,
+};
 
-const errorReducer =(state=defaultState, {type,payload}) => {
-    
+const errorReducer = (state = defaultState, { type, payload }) => {
     switch (type) {
         case LOAD_ARTICLE_ERROR: {
-            return {error:payload}
+            return { error: payload };
         }
-        
+
         default: {
-            return state
+            return state;
         }
     }
-}
-export default errorReducer
+};
+export default errorReducer;

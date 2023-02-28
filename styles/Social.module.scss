@@ -1,37 +1,33 @@
-.social{
-   display: flex;
-   flex-direction: row;
-   justify-items: center;
-   justify-content:center;
-   position: fixed;
-   width: 180px;
-   margin: 430px 0px 0px 5px;
-      
-         .github,
-         .linkedin,
-         .telegram {
-            
-            &.active,
-            &:hover {
-               background-color: #08fdd8;
-            }
-      
-         }         
-                  
-} 
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 180px;
+    margin: 430px 0px 0px 5px;
+
+    .github,
+    .linkedin,
+    .telegram {
+        &.active,
+        &:hover {
+            background-color: #08fdd8;
+        }
+    }
+}
 @media screen and (max-width: 896px) {
-   .social{
-      display: flex;
-         flex-direction: column;
-         justify-items: center;
-         justify-content: center;
-         margin: 430px 0px 0px 30px;
-         
-            .github,
-            .linkedin,
-            .telegram {
-                margin-top: 40px;
-               }
-         
-   }
+    .social {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        margin: 430px 0px 0px 30px;
+
+        .github,
+        .linkedin,
+        .telegram {
+            margin-top: 40px;
+        }
+    }
 }

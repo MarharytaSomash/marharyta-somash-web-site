@@ -1,8 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-import reducers from "./reducers/rootReducer"
+import reducers from "./reducers/rootReducer";
 
 export default configureStore({
     reducer: reducers,
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware() 
-})
-
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware(),
+});

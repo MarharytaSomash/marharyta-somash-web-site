@@ -1,28 +1,24 @@
-const TOGGLE_MENU = "TOGGLE_MENU"
+const TOGGLE_MENU = "TOGGLE_MENU";
 export interface ShowMenuState {
-  toggle: boolean;
+    toggle: boolean;
 }
 
-const defaultState:ShowMenuState = {
-        toggle: false
-}
+const defaultState: ShowMenuState = {
+    toggle: false,
+};
 
-const showMenuReducer = (state = defaultState, { type,payload}) => {
-    
+const showMenuReducer = (state = defaultState, { type, payload }) => {
     switch (type) {
-        
         case TOGGLE_MENU: {
             return {
                 ...state,
-                toggle:!payload 
-            }
+                toggle: !payload,
+            };
         }
-            
-        default: {
-            return state
-        }
-            
-    }
-}
-export default showMenuReducer
 
+        default: {
+            return state;
+        }
+    }
+};
+export default showMenuReducer;

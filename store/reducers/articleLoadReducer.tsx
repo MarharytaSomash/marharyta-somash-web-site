@@ -1,21 +1,18 @@
-const LOAD_ARTICLE = "LOAD_ARTICLE";
-
+const SET_ARTICLES = "SET_ARTICLES";
 
 const defaultState = {
-        articles: [],
-      
-}
+    articles: [],
+};
 
-const articleLoadReducer =(state=defaultState, {type,payload}) => {
-    
+const articleLoadReducer = (state = defaultState, { type, payload }) => {
     switch (type) {
-        case LOAD_ARTICLE: {
-            return {articles:payload}
+        case SET_ARTICLES: {
+            return { articles: payload };
         }
-        
+
         default: {
-            return state
+            return state;
         }
     }
-}
-export default articleLoadReducer 
+};
+export default articleLoadReducer;

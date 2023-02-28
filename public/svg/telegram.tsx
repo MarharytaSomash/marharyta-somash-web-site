@@ -1,10 +1,17 @@
-
-import styles from '../../styles/Social.module.scss';
+import styles from "../../styles/Social.module.scss";
 
 const TelegramSvg = () => {
-  return (
-     <svg className={ styles.telegram} fill="grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px">
-        <path d="M 25 2 C 12.309288 2 2 12.309297 2 25 C 2 37.690703 12.309288 48 25 48 
+    return (
+        <svg
+            className={styles.telegram}
+            fill="grey"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 50 50"
+            width="30px"
+            height="30px"
+        >
+            <path
+                d="M 25 2 C 12.309288 2 2 12.309297 2 25 C 2 37.690703 12.309288 48 25 48 
                 C 37.690712 48 48 37.690703 48 25 C 48 12.309297 37.690712 2 25 2 z M 25 4
                 C 36.609833 4 46 13.390175 46 25 C 46 36.609825 36.609833 46 25 46 C 13.390167
                 46 4 36.609825 4 25 C 4 13.390175 13.390167 4 25 4 z M 34.087891 14.035156
@@ -40,10 +47,10 @@ const TelegramSvg = () => {
                 C 11.263188 26.792734 10.998047 26.543656 10.998047 26.097656
                 C 10.998047 25.463656 11.892938 25.026 12.835938 24.625
                 C 13.831938 24.202 31.066062 16.883437 32.414062 16.398438
-                C 33.038062 16.172438 33.608891 16.035156 34.087891 16.035156 z" />
-     </svg>
+                C 33.038062 16.172438 33.608891 16.035156 34.087891 16.035156 z"
+            />
+        </svg>
+    );
+};
 
-  )
-}
-
-export default TelegramSvg
+export default TelegramSvg;

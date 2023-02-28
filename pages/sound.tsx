@@ -1,11 +1,7 @@
-import Sound from '../components/Sounds/Sound';
-import styles from '../styles/Sound.module.scss'
+import Sound from "../components/Sounds/Sound";
 
 const sound = () => {
-   return (
-   <Sound/>
-      
-   )
-}
+    return <Sound />;
+};
 
 export default sound;

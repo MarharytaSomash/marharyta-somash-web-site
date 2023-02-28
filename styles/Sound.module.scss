@@ -1,60 +1,58 @@
-
 .sound svg {
-   height: 20px;
-   margin-right: 7px;
-   position: relative;
-   
-   path {
-      fill: rgb(171, 23, 75);
-   }
+    height: 20px;
+    margin-right: 7px;
+    position: relative;
+
+    path {
+        fill: rgb(171, 23, 75);
+    }
 }
 
 .button {
-      cursor: pointer;
-      color:rgb(171, 23, 75);
-      font-weight: 500;
-      margin-left: 90px;
-      z-index: 20;
-      width: 20px;
-      position: absolute;
-      background: #1d1d1d !important;
-      
+    cursor: pointer;
+    color: rgb(171, 23, 75);
+    font-weight: 600;
+    font-size: 17px;
+    margin-left: 90px;
+    z-index: 20;
+    width: 20px;
+    position: absolute;
+    background: #1d1d1d !important;
 }
 
 @media screen and (max-width: 600px) {
-   .sound {
-      font-size: 15px;
-      cursor: pointer;
-   }
-       .button {
-          cursor: pointer;
-           z-index: 22;
-       }
+    .sound {
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .button {
+        cursor: pointer;
+        z-index: 22;
+    }
 }
 
 @media screen and (max-width: 1300px) {
-   .sound {
-      top: 1rem;
-      right: auto;
-      left: 10px;
-      font-size: 20px;
-      cursor: pointer;
-     
-   }
-   .button{
-      cursor: pointer !important;
-      font-size:20px;
-      z-index: 24;
-   }
+    .sound {
+        top: 1rem;
+        right: auto;
+        left: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .button {
+        cursor: pointer !important;
+        font-size: 20px;
+        z-index: 24;
+    }
 }
 
 .sound {
-   border-radius: 3px;
-   padding: 20px;
-   right: 20px;
-   position: fixed;
-   top: 15px;
-   display: flex;
-   align-items: center;
-   font-size: 18px;
+    border-radius: 3px;
+    padding: 20px;
+    right: 20px;
+    position: fixed;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
 }

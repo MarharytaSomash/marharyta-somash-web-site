@@ -1,9 +1,17 @@
-import styles from '../../styles/Social.module.scss';
+import styles from "../../styles/Social.module.scss";
 
-const  LinkSvg = () => {
-  return (
-     <svg className={ styles.linkedin} fill="grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px">
-        <path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48
+const LinkSvg = () => {
+    return (
+        <svg
+            className={styles.linkedin}
+            fill="grey"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 50 50"
+            width="30px"
+            height="30px"
+        >
+            <path
+                d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48
                  C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4
                  C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46
                  C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 16 12
@@ -22,11 +30,10 @@ const  LinkSvg = () => {
                  L 25 21.816406 A 1.0001 1.0001 0 0 0 26.693359 22.537109
                  C 27.684186 21.585305 29.016683 21 30.5 21 C 33.54961 21 36 23.45039 36 26.5
                  L 36 34 L 34 34 L 34 30 L 34 27.5 C 34 25.029545 31.970455 23 29.5 23
-                 C 27.029545 23 25 25.029545 25 27.5 L 25 34 L 23 34 L 23 21 z" />
-     </svg>
+                 C 27.029545 23 25 25.029545 25 27.5 L 25 34 L 23 34 L 23 21 z"
+            />
+        </svg>
+    );
+};
 
- 
-  )
-}
-
-export default  LinkSvg
+export default LinkSvg;
