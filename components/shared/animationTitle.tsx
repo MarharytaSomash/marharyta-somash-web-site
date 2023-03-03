@@ -2,7 +2,11 @@ import { useState } from "react";
 import { useSpring, animated } from "@react-spring/web";
 import styles from "../../styles/About/About.module.scss";
 
-const AnimationTitle = ({ title }: any) => {
+interface Props {
+    title: string;
+}
+
+const AnimationTitle: React.FC<Props> = ({ title }) => {
     const [state, toggle] = useState(true);
     const { x } = useSpring({
         from: { x: 0 },

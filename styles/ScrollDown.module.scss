@@ -39,13 +39,8 @@
 }
 
 @media screen and (max-width: 896px) {
-    .scroll_down_scroll_down__left {
-        left: 150px;
-        bottom: 4rem;
-    }
-
+    .scroll_down_scroll_down__left,
     .scroll_down {
-        right: -650px;
-        bottom: 4rem;
+        display: none;
     }
 }

@@ -3,10 +3,11 @@ import Link from "next/link";
 import { FC } from "react";
 import Drag from "../Drag";
 import AnimationTitle from "../shared/animationTitle";
+
 const About: FC = () => {
     return (
         <>
-            <Drag />
+            <Drag xy={{ x: 0, y: 0 }} />
             <div className={styles.about}>
                 <span className={styles.topTags}></span>
                 <AnimationTitle title="About myself" />

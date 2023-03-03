@@ -4,9 +4,11 @@ import styles from "../styles/Layout.module.scss";
 import BurgersMenu from "./BurgersMenu";
 import MobileMenu from "./MobileMenu";
 import { useSelector } from "react-redux";
+import { LayoutProps } from "./types";
+import { RootState } from "../store/reducers/rootReducer";
 
-const Layout = ({ children }: any) => {
-    const toggle = useSelector((state) => state.toggle.toggle);
+const Layout = ({ children }: LayoutProps) => {
+    const toggle = useSelector((state: RootState) => state.toggle.toggle);
 
     return (
         <div className={styles.wrap_layout}>

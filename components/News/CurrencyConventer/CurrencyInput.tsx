@@ -1,7 +1,14 @@
 import styles from "../../../styles/News/Currency.module.scss";
 import { v4 as uuidv4 } from "uuid";
+interface Props {
+    amount: number;
+    currency: string;
+    currencies: string[];
+    onAmountChange: (amount: number) => void;
+    onCurrencyChange: (currency: string) => void;
+}
 
-function CurrencyInput(props: any) {
+function CurrencyInput(props: Props): JSX.Element {
     const { amount, currency, currencies, onAmountChange, onCurrencyChange } = props;
 
     return (
@@ -9,8 +16,8 @@ function CurrencyInput(props: any) {
             <input
                 className={styles.input}
                 type="number"
-                value={amount}
-                onChange={(e) => onAmountChange(e.target.value)}
+                value={isNaN(amount) ? "" : amount}
+                onChange={(e) => onAmountChange(Number(e.target.value))}
             />
 
             <select
@@ -20,7 +27,6 @@ function CurrencyInput(props: any) {
             >
                 {currencies.map((currency: string) => (
                     <option value={currency} key={uuidv4()}>
-                        {" "}
                         {currency}
                     </option>
                 ))}
@@ -28,4 +34,5 @@ function CurrencyInput(props: any) {
         </div>
     );
 }
+
 export default CurrencyInput;

@@ -1,27 +1,24 @@
 import styles from "../../../styles/News/Currency.module.scss";
-import { useState, FC, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import CurrencyInput from "./CurrencyInput";
-import { useSpring, animated } from "@react-spring/web";
+import AnimationTitle from "../../shared/animationTitle";
+interface Rates {
+    [key: string]: number;
+}
 
-function CurrencyApp() {
-    const [amount1, setAmount1] = useState(100);
-    const [amount2, setAmount2] = useState(1);
-    const [currency1, setCurrency1] = useState("USD");
-    const [currency2, setCurrency2] = useState("UAH");
-    const [rates, setRates] = useState([]);
-    const [state, toggle] = useState(true);
-    const [error, setError] = useState(null);
-    const { x } = useSpring({
-        from: { x: 0 },
-        x: state ? 1 : 0,
-        config: { duration: 1000 },
-    });
+function CurrencyApp(): JSX.Element {
+    const [amount1, setAmount1] = useState<number>(100);
+    const [amount2, setAmount2] = useState<number>(1);
+    const [currency1, setCurrency1] = useState<string>("USD");
+    const [currency2, setCurrency2] = useState<string>("UAH");
+    const [rates, setRates] = useState<Rates>({});
+    const [error, setError] = useState<Error | null>(null);
 
     useMemo(() => {
-        let myHeaders = new Headers();
+        const myHeaders = new Headers();
         myHeaders.append("apikey", "jIoYYUB8GpLhaWroaPfD13dvZD7R8Y4t");
 
-        let requestOptions = {
+        const requestOptions: RequestInit = {
             method: "GET",
             headers: myHeaders,
         };
@@ -37,35 +34,35 @@ function CurrencyApp() {
             .catch((error) => setError(error));
     }, []);
 
-    let date = new Date().toLocaleDateString();
+    const date = new Date().toLocaleDateString();
 
-    useMemo(() => {
-        if (!!rates) {
+    useEffect(() => {
+        if (rates) {
             handleAmount1Change(100);
         }
-    }, [rates]);
+    }, [rates, handleAmount1Change]);
 
     function handleAmount1Change(amount1: number): void {
-        setAmount2(format((amount1 * rates[currency2]) / rates[currency1]));
-        setAmount1(amount1);
+        setAmount2(Number(format((Number(amount1) * rates[currency2]) / rates[currency1])));
+        setAmount1(Number(amount1));
     }
 
     function handleCurrency1Change(currency1: string): void {
-        setAmount2(format((amount1 * rates[currency2]) / rates[currency1]));
+        setAmount2(Number(format((amount1 * rates[currency2]) / rates[currency1])));
         setCurrency1(currency1);
     }
 
     function handleAmount2Change(amount2: number): void {
-        setAmount1(format((amount2 * rates[currency1]) / rates[currency2]));
-        setAmount2(amount2);
+        setAmount1(Number(format((Number(amount2) * rates[currency1]) / rates[currency2])));
+        setAmount2(Number(amount2));
     }
 
     function handleCurrency2Change(currency2: string): void {
-        setAmount1(format((amount2 * rates[currency1]) / rates[currency2]));
+        setAmount1(Number(format((amount2 * rates[currency1]) / rates[currency2])));
         setCurrency2(currency2);
     }
 
-    function format(number: any): any {
+    function format(number: number): string {
         return number.toFixed(2);
     }
 
@@ -75,18 +72,8 @@ function CurrencyApp() {
         return (
             <>
                 <div className={styles.wrapper}>
-                    <animated.h2
-                        onMouseMove={() => toggle(!state)}
-                        style={{
-                            scale: x.to({
-                                range: [0, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 1],
-                                output: [1, 0.97, 0.9, 1.1, 0.9, 1.1, 1.03, 1],
-                            }),
-                        }}
-                    >
-                        Currency Conventer
-                    </animated.h2>
-                    <h1 className={styles.title}>Course on {date}</h1>
+                    <AnimationTitle title="Currency Conventer" />
+                    <h2 className={styles.title}>Course on {date}</h2>
                     <CurrencyInput
                         onAmountChange={handleAmount1Change}
                         onCurrencyChange={handleCurrency1Change}
@@ -106,4 +93,5 @@ function CurrencyApp() {
         );
     }
 }
+
 export default CurrencyApp;

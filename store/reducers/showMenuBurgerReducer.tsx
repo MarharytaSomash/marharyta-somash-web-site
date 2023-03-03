@@ -1,3 +1,4 @@
+import { MenuBurgerType } from "../../components/types";
 const TOGGLE_MENU = "TOGGLE_MENU";
 export interface ShowMenuState {
     toggle: boolean;
@@ -7,7 +8,7 @@ const defaultState: ShowMenuState = {
     toggle: false,
 };
 
-const showMenuReducer = (state = defaultState, { type, payload }) => {
+const showMenuReducer = (state = defaultState, { type, payload }: MenuBurgerType) => {
     switch (type) {
         case TOGGLE_MENU: {
             return {

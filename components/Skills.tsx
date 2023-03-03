@@ -39,10 +39,10 @@ const Skills: FC = () => {
                 </div>
                 <div className={styles.skills_experience}>
                     <div className={styles.skills_list}>
-                        {skills.map((skill, key) => (
+                        {skills.map((skill) => (
                             <div key={uuidv4()}>
                                 <p>{skill.name}</p>
-                                <ProgressBar done={skill.done} />
+                                <ProgressBar done={Number(skill.done)} />
                             </div>
                         ))}
                     </div>

@@ -5,7 +5,7 @@ export const useNews = () => {
 
     const getNews = () => {
         fetch(
-            "https://newsdata.io/api/1/news?apikey=pub_15737250ae4abe462e94fb9715944723e5a06&language=en",
+            "https://newsdata.io/api/1/news?apikey=pub_18143ad03942e04d52d8310f67f976dd4bde4&language=en",
         )
             .then((resp) => resp.json())
             .then((res) => res.results)
@@ -18,7 +18,7 @@ export const useNews = () => {
     return { getNews };
 };
 
-export const setArticlesAction = (articles) => ({
+export const setArticlesAction = (articles: Array<object>) => ({
     type: "SET_ARTICLES",
     payload: articles,
 });

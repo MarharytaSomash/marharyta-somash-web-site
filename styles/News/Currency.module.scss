@@ -1,76 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap'); 
- 
-.currency{
-   display: flex;
-   flex-direction: row;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+.currency {
+    display: flex;
+    flex-direction: row;
 }
-.title{
-   color: aquamarine;
-   font-size: 17px;
-   margin-bottom: 20px;
- 
+.title {
+    color: aquamarine;
+    font-size: 17px;
+    margin-bottom: 20px;
 }
-.wrapper{
-      background-color: rgb(198, 207, 207);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      justify-items: center;
-      align-items: center;
-      width: 450px;
-      margin: 50px;
-      background-color: rgb(24, 20, 20);
-      color: black;
-      padding: 20px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-      font-family: 'Inter', system-ui !important;
-      box-sizing: border-box;
-      border-radius: 15px;
-      height: 50%;
-   h2 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-self: center;  
-      color: azure;
-      font-size: 25px;
-      margin-bottom: 10px;
-   
-   &:hover{
-      color: aquamarine;
-   }
-   }
- }  
+
+.wrapper {
+    background-color: rgb(198, 207, 207);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    width: 450px;
+    margin: 50px;
+    background-color: rgb(24, 20, 20);
+    color: black;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    font-family: "Inter", system-ui !important;
+    box-sizing: border-box;
+    border-radius: 15px;
+    height: 50%;
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        color: azure;
+        font-size: 22px;
+        margin-bottom: 10px;
+
+        &:hover {
+            color: aquamarine;
+        }
+    }
+}
 .group {
-   background: #335;
-   width: 230px;
-   margin: 0 auto 20px;
-   display: grid;
-   grid-template-columns: 100px 80px;
-   border-radius: 15px;
+    background: #335;
+    width: 230px;
+    margin: 0 auto 20px;
+    display: grid;
+    grid-template-columns: 100px 80px;
+    border-radius: 15px;
 }
 
 .input,
 .select {
-   background: none;
-   border: 0;
-   color: #fff;
-   font-size: 17px;
-   height: 50px;
+    background: none;
+    border: 0;
+    color: #fff;
+    font-size: 17px;
+    height: 50px;
 }
 
 .input {
-   padding-left: 10px;
+    padding-left: 10px;
 }
 
 .select {
-   padding: 10px;
+    padding: 10px;
 }
 
 @media screen and (max-width: 896px) {
-   .currency {
-         display: flex;
-         flex-direction: column;
-      }
+    .currency {
+        display: flex;
+        flex-direction: column;
+    }
 }
-

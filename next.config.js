@@ -1,21 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-  }
-
-module.exports = {
-  module: {
-    nextConfig,
-    rules: [
-      {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
-      },
-    ],
-  },
+    reactStrictMode: true,
+    swcMinify: true,
 };
+
+module.exports = nextConfig;
+const withFonts = require("next-fonts");
+
+module.exports = withFonts({
+    webpack(config, options) {
+        return config;
+    },
+});

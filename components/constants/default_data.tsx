@@ -1,4 +1,4 @@
-import { navigationType, skills, social_dataType } from "../types";
+import { navigationType, skillsType, social_dataType } from "../types";
 
 export const navigation: Array<navigationType> = [
     { id: 1, title: "About me", path: "/about" },
@@ -35,7 +35,7 @@ export const arraySphere: string[] = [
     "NextJS",
 ];
 
-export const skills: skills = [
+export const skills: skillsType = [
     { name: "React", done: "98" },
     { name: "Redux", done: "90" },
     { name: "Next JS", done: "98" },

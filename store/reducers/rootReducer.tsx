@@ -3,10 +3,10 @@ import showMenuReducer from "./showMenuBurgerReducer";
 import { combineReducers } from "redux";
 import errorReducer from "./errorReducer";
 
-const reducers = {
+const reducers = combineReducers({
     article: articleLoadReducer,
     toggle: showMenuReducer,
     error: errorReducer,
-};
-
-export default combineReducers(reducers);
+});
+export type RootState = ReturnType<typeof reducers>;
+export default reducers;

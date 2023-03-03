@@ -1,7 +1,8 @@
 import { useState } from "react";
 import styles from "../styles/ProgressBar.module.scss";
+import { ProgressBarProps } from "./types";
 
-const ProgressBar = ({ done }) => {
+const ProgressBar: React.FC<ProgressBarProps> = ({ done }) => {
     const [style, setStyle] = useState({});
 
     setTimeout(() => {
