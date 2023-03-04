@@ -16,7 +16,7 @@ function CurrencyApp(): JSX.Element {
 
     useMemo(() => {
         const myHeaders = new Headers();
-        myHeaders.append("apikey", "jIoYYUB8GpLhaWroaPfD13dvZD7R8Y4t");
+        myHeaders.append("apikey", "Uf2r5iCXC7khVdg1oMkq1juhLPCxsYHw");
 
         const requestOptions: RequestInit = {
             method: "GET",

@@ -28,7 +28,7 @@
     background: #1d1d1d !important;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 860px) {
     .sound {
         top: 0.1rem;
         left: 5px;
@@ -37,8 +37,8 @@
 
         .button {
             cursor: pointer !important;
-            font-size: 30px;
-            margin-left: 10px;
+            font-size: 20px;
+            max-width: 200px;
         }
     }
 }
