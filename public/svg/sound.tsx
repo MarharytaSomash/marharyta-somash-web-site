@@ -1,5 +1,3 @@
-import styles from "../../styles/Sound.module.scss";
-
 const SoundSvg = () => {
     return (
         <svg
