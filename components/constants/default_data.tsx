@@ -31,15 +31,19 @@ export const arraySphere: string[] = [
     "git",
     "typescript",
     "HTML",
-    "rest",
+    "Rest",
+    "Jira",
     "NextJS",
+    "Scrum",
+    "Postman",
 ];
 
 export const skills: skillsType = [
     { name: "React", done: "98" },
     { name: "Redux", done: "90" },
     { name: "Next JS", done: "98" },
-    { name: "Node JS", done: "80" },
     { name: "Typescript", done: "90" },
     { name: "Git", done: "100" },
+    { name: "Jira", done: "90" },
+    { name: "Scrum", done: "90" },
 ];

@@ -13,23 +13,17 @@ const About: FC = () => {
                 <AnimationTitle title="About myself" />
                 <p className={styles.about_details}>I’m a Front-End Developer located in Kyiv.</p>
                 <p className={styles.about_details}>
-                    I have experience in creating websites using various technologies, including
-                    React,Next JS, Redux, and TypeScript.
+                    I have almost 1 year of commercial experience working in a startup specializing
+                    in cryptocurrency wallet development.
+                </p>
+                <p className={styles.about_details}>
+                    Tecnology: Jira, Scrum, Git, Postman,React,Next JS, Redux, Typescript, SCSS.
+                </p>
+                <p className={styles.about_details}>
+                    As a Junior Front End Developer, I am eager to further develop my expertise,
+                    contribute to challenging projects, and collaborate with talented professionals.
                 </p>
 
-                <p className={styles.about_details}>
-                    Although my experience is non-commercial, i can still highlight any personal
-                    projects or self-directed learning you have undertaken to showcase your skills
-                    and expertise. I can also mention any specific challenges you faced and how you
-                    overcame them, as well as any notable achievements or contributions i made to
-                    your projects.
-                </p>
-
-                <p className={styles.about_details}>
-                    Additionally, i can emphasize my eagerness to continue learning and growing as a
-                    Junior Front End Developer, and my willingness to collaborate and contribute to
-                    a team environment.
-                </p>
                 <div className={styles.about_details_link}>
                     <span>
                         <Link href={"https://t.me/MarharytaSomash"}>

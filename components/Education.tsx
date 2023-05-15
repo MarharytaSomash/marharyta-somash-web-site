@@ -16,28 +16,22 @@ const Education: FC = () => {
             <section className={styles.about_education}>
                 <AnimationTitle title=" Additional education" />
                 <h3 className={styles.education_title}>
-                    2022 - to present, Green Forest English course:
+                    2022 - 2023, Green Forest English course - Advanced level (C1):
                     <br></br>
                 </h3>
                 <div className={styles.education_details_link}>
                     <p className={styles.link}>
-                        <Link href={"#"}>Upper-intermediate level (B2)</Link>
-                    </p>
-                </div>
-                <h3 className={styles.education_title}> 2023, Front End course at Ciclum </h3>
-                <div className={styles.education_details_link}>
-                    <p className={styles.link}>
                         <Link
                             href={
-                                "https://courses.prometheus.org.ua:18090/downloads/d616f03fb90a4b9e8d90d46273793cee/Certificate.pdf"
+                                "https://my.greenforest.com.ua/certificate/cf0706081c10c6aaa44d5e56cb5aa054c85bc673"
                             }
                         >
-                            https://courses.prometheus.org.ua:18090/downloads/d616f03fb90a4b9e8d90d46273793cee/Certificate.pdf
+                            https://my.greenforest.com.ua/certificate/cf0706081c10c6aaa44d5e56cb5aa054c85bc673
                         </Link>
                     </p>
                 </div>
+
                 <h3 className={styles.education_title}>
-                    {" "}
                     2022, Front End Pro course at Hillel IT School:{" "}
                 </h3>
                 <div className={styles.education_details_link}>
@@ -48,7 +42,6 @@ const Education: FC = () => {
                     </p>
                 </div>
                 <h3 className={styles.education_title}>
-                    {" "}
                     2022, "Basics of Web UI Development 2022" at Lviv IT School:{" "}
                 </h3>
                 <div className={styles.education_details_link}>

@@ -15,18 +15,34 @@ const Skills: FC = () => {
 
                     <div className={styles.skills_describe}>
                         <div>
-                            In my previous job , i have worked for 2 years as a commodity market
-                            research analyst where I organised of marketing research, analysis of
-                            the market and brands of competitors, preparation of sales reports and
-                            sales analysis, product sales planning. This experience has made to
-                            improve my planning skills and organisation.
+                            <h1>StartUp"Crypto wallet"</h1>
+                            <h2>Junior Front End Developer </h2>
+                            <h3>Responsibility:</h3>
+                            <ul>
+                                <li>
+                                    * Responsible for the development and maintenance of
+                                    registration and authorization pages, as well as the creation of
+                                    user pages within the framework of the Cryptowallet project
+                                </li>
+                                <li>
+                                    * Adding new components and supporting existing ones in the
+                                    crypto wallet.
+                                </li>
+                                <li>
+                                    * Worked in a collaborative environment, communicating with
+                                    other developers to achieve common project goals.{" "}
+                                </li>
+                                <li>
+                                    * Active participation in the process of code review and
+                                    development improvement, ensuring code cleanliness and adherence
+                                    to best practices.
+                                </li>
+                            </ul>
+                            <p>
+                                Tecnology: Jira, Scrum, Git, Postman,React, Redux, Typescript, SCSS.
+                            </p>
                         </div>
-                        <div>
-                            Also i worked as an economist for 2 years made various sales reports and
-                            product price analyses. This experience helpS me become persistent and
-                            have strategic thinking with excellent knowledge Microsoft Office and 1C
-                            Entrepreneur.
-                        </div>
+
                         <div>
                             Visit my profile
                             <Link href={"https://www.linkedin.com/in/marharyta-somash-aa7010197/"}>
@@ -46,7 +62,22 @@ const Skills: FC = () => {
                             </div>
                         ))}
                     </div>
-
+                    <section className={styles.experience}>
+                        <h2>Junior Front End Developer</h2>
+                        <h3>StartUp"Crypto wallet"</h3>
+                        <h4>2022 - 2023</h4>
+                        <p>
+                            Responsible for the development and maintenance of registration and
+                            authorization pages.
+                        </p>
+                        <p>
+                            Adding new components and supporting existing ones in the crypto wallet
+                        </p>
+                        <p>
+                            Active participation in the process of code review and development
+                            improvement, ensuring code cleanliness and adherence to best practices.
+                        </p>
+                    </section>
                     <section className={styles.experience}>
                         <h2> Analyst in commodity market research </h2>
                         <h3>LLC "MD Eurotrade", Kyiv</h3>
@@ -56,14 +87,6 @@ const Skills: FC = () => {
                             competitors
                         </p>
                         <p>Preparation of sales reports and sales analysis;</p>
-                    </section>
-                    <section className={styles.experience}>
-                        <h2> Economist of the planning and analytical department</h2>
-                        <h3>PJSC "Tavria, House of vintage cognacs", Nova Khahovka</h3>
-                        <h4>11.2017 - 07.2019</h4>
-                        <p>Compilation and submission of statistical reports</p>
-                        <p>Calculation of efficiency of export supply</p>
-                        <p>Development of free selling and retail prices for products.</p>
                     </section>
                 </div>
             </div>
